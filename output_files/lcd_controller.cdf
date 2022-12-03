@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C35F672) Path("D:/Users/User/Documents/GitHub/lcd_controller/output_files/") File("lcd_controller.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C35F672) Path("D:/Users/User/Documents/GitHub/lcd_controller/LCD_FPGA/output_files/") File("lcd_controller.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

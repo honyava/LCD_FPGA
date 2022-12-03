@@ -4,12 +4,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity lcd_test is
 	port (
 		clk          : in  std_logic;
-		--rst          : in  std_logic;
 		e        : out std_logic;
 		rs       : out std_logic;
 		rw       : out std_logic;
 		lcd_data       : out std_logic_vector(7 downto 0);
-		--busy       : out std_logic;
 		lcd_on       : out std_logic;
 		lcd_blon : out std_logic);
 		
