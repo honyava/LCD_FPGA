@@ -104,8 +104,10 @@ BEGIN
         variable bindec : std_logic_vector(11 downto 0) := (others => '0');
         variable div_freq_lcd : natural := 0;
         variable send_flag : integer := 0;
+        variable flag_zero : integer := 0;
         variable j : integer := 0;
         variable k : integer := 0;
+        
     begin
         if (rising_edge(clk)) then
             
@@ -122,21 +124,39 @@ BEGIN
                 cnt := 0;
             end if;
             if (div_freq_lcd > 2500 and send_flag = 1) then 
-                if j = 3 then
+                if (j = 3 or flag_zero = 1) then
                     to_lcd <= X"0A"; --send point   
+                    flag_zero := 0;
+                    j := 3;
                 else
-                    to_lcd <= X"0" & bindec(3 + 4*j downto 0 + 4*j);  --send 3 numbers of ip (192 for example)
+                    if bindec(11 downto 8) = X"0" and flag_zero = 0 then
+                        if bindec(7 downto 4) = X"0" and flag_zero = 0 then
+                            flag_zero := 1;     
+                            to_lcd <= X"0" & bindec(3 downto 0);      --send 1 numbers of ip (1 for example)
+                        else
+                            if j < 2 then
+                                to_lcd <= X"0" & bindec(3 + 4*j downto 0 + 4*j);  --send 2 numbers of ip (10 for example)
+                                flag_zero := 0;
+                                if j = 1 then 
+                                    flag_zero := 1;
+                                end if;   
+                            end if;
+                            
+                        end if;
+                    else   
+                        to_lcd <= X"0" & bindec(3 + 4*j downto 0 + 4*j); --send 3 numbers of ip (192 for example)
+                    end if; 
                 end if;
                 div_freq_lcd := 0;
                 j := j + 1;
             elsif (j = 4) then
+                
                 if k = 3 then
-                    to_lcd <= X"0F";
+                    to_lcd <= X"0F";  --end of message
                     k := 0;
                 else
-                    k := k + 1;
-                end if;
-                
+                    k := k + 1; 
+                end if;               
                 j := 0;
                 send_flag := 0;
             end if;
