@@ -19,12 +19,13 @@ Sim dir               :  simulation\activehdl
 
 Info: Starting NativeLink simulation with Active-HDL software
 Sourced NativeLink script c:/altera/13.0sp1/quartus/common/tcl/internal/nativelink/active-hdl.tcl
+Warning: File lcd_controller_sim_rtl_vhdl.do already exists - backing up current file as lcd_controller_sim_rtl_vhdl.do.bak
 Probing asim_log
 Active-HDL Info: createdesign lcd_controller C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl
 Active-HDL Info: # Design lcd_controller created
 Active-HDL Info: opendesign -a lcd_controller.adf
 Active-HDL Info: # Design: Creating new workspace file: "C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\lcd_controller.aws"
-Active-HDL Info: # Design: 11:46, 07 January 2023
+Active-HDL Info: # Design: 21:59, 07 January 2023
 Active-HDL Info: # Design: Opening design "C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\lcd_controller.adf"
 Active-HDL Info: waveformmode ASDB
 Active-HDL Info: alib  vhdl_libs/altera_vhdl
@@ -34,12 +35,12 @@ Active-HDL Info: # Library Manager: Library "altera" attached.
 Active-HDL Info: acom -strict93 -dbg -work altera c:/altera/13.0sp1/quartus/eda/sim_lib/altera_syn_attributes.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_syn_attributes.vhd
 Active-HDL Info: # Compile Package "altera_syn_attributes"
-Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
 Active-HDL Info: acom -strict93 -dbg -work altera c:/altera/13.0sp1/quartus/eda/sim_lib/altera_standard_functions.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_standard_functions.vhd
 Active-HDL Info: # Compile Package "altera_standard_functions"
 Active-HDL Info: # Compile Package Body "altera_standard_functions"
-Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
 Active-HDL Info: acom -strict93 -dbg -work altera c:/altera/13.0sp1/quartus/eda/sim_lib/alt_dspbuilder_package.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/alt_dspbuilder_package.vhd
 Active-HDL Info: # Compile Package "alt_dspbuilder_package"
@@ -49,7 +50,7 @@ Active-HDL Info: acom -strict93 -dbg -work altera c:/altera/13.0sp1/quartus/eda/
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_europa_support_lib.vhd
 Active-HDL Info: # Compile Package "altera_europa_support_lib"
 Active-HDL Info: # Compile Package Body "altera_europa_support_lib"
-Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
 Active-HDL Info: acom -strict93 -dbg -work altera c:/altera/13.0sp1/quartus/eda/sim_lib/altera_primitives_components.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_primitives_components.vhd
 Active-HDL Info: # Compile Package "dffeas_pack"
@@ -141,7 +142,7 @@ Active-HDL Info: # Library Manager: Library "lpm" attached.
 Active-HDL Info: acom -strict93 -dbg -work lpm c:/altera/13.0sp1/quartus/eda/sim_lib/220pack.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/220pack.vhd
 Active-HDL Info: # Compile Package "LPM_COMPONENTS"
-Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
 Active-HDL Info: acom -strict93 -dbg -work lpm c:/altera/13.0sp1/quartus/eda/sim_lib/220model.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/220model.vhd
 Active-HDL Info: # Compile Package "LPM_COMMON_CONVERSION"
@@ -227,7 +228,7 @@ Active-HDL Info: acom -strict93 -dbg -work sgate c:/altera/13.0sp1/quartus/eda/s
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/sgate_pack.vhd
 Active-HDL Info: # Compile Package "sgate_pack"
 Active-HDL Info: # Compile Package Body "sgate_pack"
-Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
 Active-HDL Info: acom -strict93 -dbg -work sgate c:/altera/13.0sp1/quartus/eda/sim_lib/sgate.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/sgate.vhd
 Active-HDL Info: # Compile Entity "oper_add"
@@ -278,7 +279,7 @@ Active-HDL Info: # Library Manager: Library "altera_mf" attached.
 Active-HDL Info: acom -strict93 -dbg -work altera_mf c:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd
 Active-HDL Info: # Compile Package "altera_mf_components"
-Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
 Active-HDL Info: acom -strict93 -dbg -work altera_mf c:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf.vhd
 Active-HDL Info: # Compile Entity "LCELL"
@@ -464,7 +465,7 @@ Active-HDL Info: # done
 Active-HDL Info: acom -strict93 -dbg -work altera_lnsim c:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd
 Active-HDL Info: # Compile Package "altera_lnsim_components"
-Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
 Active-HDL Info: alib  vhdl_libs/cycloneii_vhdl
 Active-HDL Info: # Library Manager: Library "cycloneii_vhdl" attached.
 Active-HDL Info: amap cycloneii vhdl_libs/cycloneii_vhdl
@@ -542,7 +543,7 @@ Active-HDL Info: # Compile success 0 Errors 5 Warnings  Analysis time :  0.7 [s]
 Active-HDL Info: acom -strict93 -dbg -work cycloneii c:/altera/13.0sp1/quartus/eda/sim_lib/cycloneii_components.vhd
 Active-HDL Info: # File: c:/altera/13.0sp1/quartus/eda/sim_lib/cycloneii_components.vhd
 Active-HDL Info: # Compile Package "cycloneii_components"
-Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
 Active-HDL Info: addfile -c -auto C:/Users/retin/Desktop/My_Git/LCD_FPGA/lcd_controller.vhd
 Active-HDL Info: # Adding file C:\Users\retin\Desktop\My_Git\LCD_FPGA\lcd_controller.vhd ... Done
 Active-HDL Info: addfile -c -auto C:/Users/retin/Desktop/My_Git/LCD_FPGA/output_files/ControllerTest_TOP.vhd
@@ -583,13 +584,13 @@ Active-HDL Info: # SLP: Started
 Active-HDL Info: # SLP: Elaboration phase ...
 Active-HDL Info: # SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
 Active-HDL Info: # SLP: Finished : 0.0 [s]
-Active-HDL Info: # ELAB2: Elaboration final pass complete - time: 0.1 [s].
+Active-HDL Info: # ELAB2: Elaboration final pass complete - time: 0.0 [s].
 Active-HDL Warning: # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 Active-HDL Warning: # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 Active-HDL Info: # KERNEL: Kernel process initialization done.
-Active-HDL Info: # Allocation: Simulator allocated 6608 kB (elbread=427 elab2=6042 kernel=139 sdf=0)
+Active-HDL Info: # Allocation: Simulator allocated 6609 kB (elbread=427 elab2=6043 kernel=139 sdf=0)
 Active-HDL Info: # KERNEL: ASDB file was created in location C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\src\wave.asdb
-Active-HDL Info: #  11:47, 07 January 2023
+Active-HDL Info: #  22:00, 07 January 2023
 Active-HDL Info: #  Simulation has been initialized
 Active-HDL Info: # add wave -noreg {/lcd_test_tb/clk_tb}
 Active-HDL Info: # add wave -noreg {/lcd_test_tb/lcd_data_in_tb}
@@ -602,75 +603,11 @@ Active-HDL Info: # add wave -noreg {/lcd_test_tb/lcd_blon_tb}
 Active-HDL Info: # VSIM: 8 object(s) traced.
 Active-HDL Info: # Waveform file 'untitled.awc' connected to 'C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/wave.asdb'.
 Active-HDL Info: run
-Active-HDL Info: # RUNTIME: Info: RUNTIME_0142 lcd_test_tb.vhd (53): finish called.
-Active-HDL Info: # KERNEL: Time: 58 ms,  Iteration: 0,  Instance: /lcd_test_tb,  Process: sim.
-Active-HDL Info: # KERNEL: stopped at time: 58 ms
+Active-HDL Info: # RUNTIME: Info: RUNTIME_0142 lcd_test_tb.vhd (59): finish called.
+Active-HDL Info: # KERNEL: Time: 95 ms,  Iteration: 0,  Instance: /lcd_test_tb,  Process: sim.
+Active-HDL Info: # KERNEL: stopped at time: 95 ms
 Active-HDL Info: # VSIM: Simulation has finished. There are no more test vectors to simulate.
-Active-HDL Info: acom -O3 -e 100 -work lcd_controller -2008  $dsn/src/lcd_controller.vhd $dsn/src/ControllerTest_TOP.vhd $dsn/src/lcd_test.vhd $dsn/src/lcd_test_tb.vhd
-Active-HDL Warning: # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-Active-HDL Info: # File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_controller.vhd
-Active-HDL Info: # Compile Entity "lcd_controller"
-Active-HDL Info: # Compile Architecture "controller" of Entity "lcd_controller"
-Active-HDL Info: # File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/ControllerTest_TOP.vhd
-Active-HDL Info: # Compile Entity "ControllerTest_TOP"
-Active-HDL Info: # Compile Architecture "behavior" of Entity "ControllerTest_TOP"
-Active-HDL Info: # File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_test.vhd
-Active-HDL Info: # Compile Entity "lcd_test"
-Active-HDL Info: # Compile Architecture "Behavioral" of Entity "lcd_test"
-Active-HDL Info: # File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_test_tb.vhd
-Active-HDL Info: # Compile Entity "lcd_test_tb"
-Active-HDL Info: # Compile Architecture "tb" of Entity "lcd_test_tb"
-Active-HDL Info: # Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
-Active-HDL Info: endsim
-Active-HDL Info: # VSIM: Simulation has finished.
-Error: Encountered an error while running Active-HDL Simulation software 
-Error: NativeLink simulation flow was NOT successful
-
-
-
-================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
-Nativelink TCL script failed with errorCode:  CHILDSTATUS 14840 31262
-Nativelink TCL script failed with errorInfo:  child process exited abnormally
-    while executing
-"close $pipe_id"
-    invoked from within
-"if [catch {close $pipe_id} errstream ] {
-				set savedCode $::errorCode
-				set savedInfo $::errorInfo
-				if { [regexp {CHILDSTATUS ([1-9]+) ([1-9]+)..."
-    invoked from within
-"if [ catch {eval gen_activehdl_script args_hash} sim_do_file_name] {
-
-		# when exception is thrown, sim_do_file_name contains the error msg (otherwise..."
-    (procedure "launch_sim" line 20)
-    invoked from within
-"launch_sim launch_args_hash"
-    ("eval" body line 1)
-    invoked from within
-"eval launch_sim launch_args_hash"
-    invoked from within
-"if [ info exists ::errorCode ] {
-				set savedCode $::errorCode
-				set savedInfo $::errorInfo
-				error $result $savedInfo $savedCode
-			} else {
-			..."
-    invoked from within
-"if [catch {eval launch_sim launch_args_hash} result ] {
-			set status 1
-			if [ info exists ::errorCode ] {
-				set savedCode $::errorCode
-				set sav..."
-    (procedure "run_sim" line 78)
-    invoked from within
-"run_sim run_sim_args_hash"
-    invoked from within
-"if [ info exists ::errorCode ] {
-			set savedCode $::errorCode
-			set savedInfo $::errorInfo
-			error "$result" $savedInfo $savedCode
-		} else {
-			er..."
-    (procedure "run_eda_simulation_tool" line 330)
-    invoked from within
-"run_eda_simulation_tool eda_opts_hash"
+Active-HDL Info: # Waveform file 'C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/untitled.awc' connected to 'C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/untitled.asdb'.
+Active-HDL Info: # Adding file C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\src\untitled.asdb ... Done
+Active-HDL Info: # Adding file C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\src\untitled.awc ... Done
+Info: NativeLink simulation flow was successful

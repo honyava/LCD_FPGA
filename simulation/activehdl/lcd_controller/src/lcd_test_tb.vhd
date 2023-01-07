@@ -2,7 +2,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
---for 1 period of transmission 700 us
 
 entity lcd_test_tb is
 end lcd_test_tb;
@@ -37,20 +36,19 @@ begin
         variable cnt : integer range 0 to 15;
         begin
             lcd_data_in_tb <= (others => '0');
-            wait for 55 ms;
+            wait for 65 ms;
             lcd_data_in_tb <= X"691AEF01";
-            wait for 700 us;
+            wait for 5 ms;
             lcd_data_in_tb <= X"0AFF010C";
-            wait for 700 us;
+            wait for 5 ms;
             lcd_data_in_tb <= X"0CCDEF0C";
-            wait for 700 us;
-            lcd_data_in_tb <= (others => '0');
-            wait for 2 ms;
-            --for num in 0 to 1 loop
-
-                
-            --end loop;
-            
+            wait for 5 ms;
+            lcd_data_in_tb <= X"92FF010C";
+            wait for 5 ms;
+            lcd_data_in_tb <= X"11CDEF11";
+            wait for 5 ms;
+            lcd_data_in_tb <= X"11101101";
+            wait for 5 ms;
             
             
             std.env.finish;

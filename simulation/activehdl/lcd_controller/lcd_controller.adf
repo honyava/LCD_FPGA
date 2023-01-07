@@ -43,11 +43,15 @@ fileopenfolder=C:\My_Designs\LCD\LCD\src
 /ControllerTest_TOP.vhd=-1
 /lcd_test.vhd=-1
 /lcd_test_tb.vhd=-1
+/untitled.asdb=-1
+/untitled.awc=-1
 [Files.Data]
 .\src\lcd_controller.vhd=VHDL Source Code
 .\src\ControllerTest_TOP.vhd=VHDL Source Code
 .\src\lcd_test.vhd=VHDL Source Code
 .\src\lcd_test_tb.vhd=VHDL Source Code
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
 [HierarchyViewer]
 HierarchyInformation=lcd_test_tb|tb|0
 ShowHide=ShowTopLevel

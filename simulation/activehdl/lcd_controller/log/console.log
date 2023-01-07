@@ -6,12 +6,12 @@ amap altera vhdl_libs/altera_vhdl
 acom -strict93 -dbg -work altera c:/altera/13.0sp1/quartus/eda/sim_lib/altera_syn_attributes.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_syn_attributes.vhd
 # Compile Package "altera_syn_attributes"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
 acom -strict93 -dbg -work altera c:/altera/13.0sp1/quartus/eda/sim_lib/altera_standard_functions.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_standard_functions.vhd
 # Compile Package "altera_standard_functions"
 # Compile Package Body "altera_standard_functions"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
 acom -strict93 -dbg -work altera c:/altera/13.0sp1/quartus/eda/sim_lib/alt_dspbuilder_package.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/alt_dspbuilder_package.vhd
 # Compile Package "alt_dspbuilder_package"
@@ -21,7 +21,7 @@ acom -strict93 -dbg -work altera c:/altera/13.0sp1/quartus/eda/sim_lib/altera_eu
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_europa_support_lib.vhd
 # Compile Package "altera_europa_support_lib"
 # Compile Package Body "altera_europa_support_lib"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
 acom -strict93 -dbg -work altera c:/altera/13.0sp1/quartus/eda/sim_lib/altera_primitives_components.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_primitives_components.vhd
 # Compile Package "dffeas_pack"
@@ -114,7 +114,7 @@ amap lpm vhdl_libs/lpm_vhdl
 acom -strict93 -dbg -work lpm c:/altera/13.0sp1/quartus/eda/sim_lib/220pack.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/220pack.vhd
 # Compile Package "LPM_COMPONENTS"
-# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
 acom -strict93 -dbg -work lpm c:/altera/13.0sp1/quartus/eda/sim_lib/220model.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/220model.vhd
 # Compile Package "LPM_COMMON_CONVERSION"
@@ -201,7 +201,7 @@ acom -strict93 -dbg -work sgate c:/altera/13.0sp1/quartus/eda/sim_lib/sgate_pack
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/sgate_pack.vhd
 # Compile Package "sgate_pack"
 # Compile Package Body "sgate_pack"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
 acom -strict93 -dbg -work sgate c:/altera/13.0sp1/quartus/eda/sim_lib/sgate.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/sgate.vhd
 # Compile Entity "oper_add"
@@ -253,7 +253,7 @@ amap altera_mf vhdl_libs/altera_mf_vhdl
 acom -strict93 -dbg -work altera_mf c:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf_components.vhd
 # Compile Package "altera_mf_components"
-# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
 acom -strict93 -dbg -work altera_mf c:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_mf.vhd
 # Compile Entity "LCELL"
@@ -440,7 +440,7 @@ alog  -sv2k5 -dbg -msg 0 -work altera_lnsim c:/altera/13.0sp1/quartus/eda/sim_li
 acom -strict93 -dbg -work altera_lnsim c:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim_components.vhd
 # Compile Package "altera_lnsim_components"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
 
 alib  vhdl_libs/cycloneii_vhdl
 # Library Manager: Library "cycloneii_vhdl" attached.
@@ -519,7 +519,7 @@ acom -strict93 -dbg -work cycloneii c:/altera/13.0sp1/quartus/eda/sim_lib/cyclon
 acom -strict93 -dbg -work cycloneii c:/altera/13.0sp1/quartus/eda/sim_lib/cycloneii_components.vhd
 # File: c:/altera/13.0sp1/quartus/eda/sim_lib/cycloneii_components.vhd
 # Compile Package "cycloneii_components"
-# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
 
 addfile -c -auto C:/Users/retin/Desktop/My_Git/LCD_FPGA/lcd_controller.vhd
 # Adding file C:\Users\retin\Desktop\My_Git\LCD_FPGA\lcd_controller.vhd ... Done
@@ -562,13 +562,13 @@ asim -O5 +access +r +m+lcd_test_tb lcd_test_tb tb
 # SLP: Elaboration phase ...
 # SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
 # SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6608 kB (elbread=427 elab2=6042 kernel=139 sdf=0)
+# Allocation: Simulator allocated 6609 kB (elbread=427 elab2=6043 kernel=139 sdf=0)
 # KERNEL: ASDB file was created in location C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\src\wave.asdb
-#  11:47, 07 January 2023
+#  22:00, 07 January 2023
 #  Simulation has been initialized
 # add wave -noreg {/lcd_test_tb/clk_tb}
 # add wave -noreg {/lcd_test_tb/lcd_data_in_tb}
@@ -581,148 +581,10 @@ asim -O5 +access +r +m+lcd_test_tb lcd_test_tb tb
 # VSIM: 8 object(s) traced.
 # Waveform file 'untitled.awc' connected to 'C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/wave.asdb'.
 run
-# RUNTIME: Info: RUNTIME_0142 lcd_test_tb.vhd (53): finish called.
-# KERNEL: Time: 58 ms,  Iteration: 0,  Instance: /lcd_test_tb,  Process: sim.
-# KERNEL: stopped at time: 58 ms
+# RUNTIME: Info: RUNTIME_0142 lcd_test_tb.vhd (59): finish called.
+# KERNEL: Time: 95 ms,  Iteration: 0,  Instance: /lcd_test_tb,  Process: sim.
+# KERNEL: stopped at time: 95 ms
 # VSIM: Simulation has finished. There are no more test vectors to simulate.
-acom -O3 -e 100 -work lcd_controller -2008  $dsn/src/lcd_controller.vhd $dsn/src/ControllerTest_TOP.vhd $dsn/src/lcd_test.vhd $dsn/src/lcd_test_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_controller.vhd
-# Compile Entity "lcd_controller"
-# Compile Architecture "controller" of Entity "lcd_controller"
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/ControllerTest_TOP.vhd
-# Compile Entity "ControllerTest_TOP"
-# Compile Architecture "behavior" of Entity "ControllerTest_TOP"
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_test.vhd
-# Compile Entity "lcd_test"
-# Compile Architecture "Behavioral" of Entity "lcd_test"
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_test_tb.vhd
-# Compile Entity "lcd_test_tb"
-# Compile Architecture "tb" of Entity "lcd_test_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+lcd_test_tb lcd_test_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6608 kB (elbread=427 elab2=6042 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\src\wave.asdb
-#  11:49, 07 January 2023
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0142 lcd_test_tb.vhd (55): finish called.
-# KERNEL: Time: 60 ms,  Iteration: 0,  Instance: /lcd_test_tb,  Process: sim.
-# KERNEL: stopped at time: 60 ms
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-acom -O3 -e 100 -work lcd_controller -2008  $dsn/src/lcd_controller.vhd $dsn/src/ControllerTest_TOP.vhd $dsn/src/lcd_test.vhd $dsn/src/lcd_test_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_controller.vhd
-# Compile Entity "lcd_controller"
-# Compile Architecture "controller" of Entity "lcd_controller"
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/ControllerTest_TOP.vhd
-# Compile Entity "ControllerTest_TOP"
-# Compile Architecture "behavior" of Entity "ControllerTest_TOP"
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_test.vhd
-# Compile Entity "lcd_test"
-# Compile Architecture "Behavioral" of Entity "lcd_test"
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_test_tb.vhd
-# Compile Entity "lcd_test_tb"
-# Compile Architecture "tb" of Entity "lcd_test_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
-endsim
-# VSIM: Simulation has finished.
-asim -O5 +access +r +m+lcd_test_tb lcd_test_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6608 kB (elbread=427 elab2=6042 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\src\wave.asdb
-#  11:52, 07 January 2023
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0142 lcd_test_tb.vhd (56): finish called.
-# KERNEL: Time: 56100 us,  Iteration: 0,  Instance: /lcd_test_tb,  Process: sim.
-# KERNEL: stopped at time: 56100 us
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-acom -O3 -e 100 -work lcd_controller -2008  $dsn/src/lcd_controller.vhd $dsn/src/ControllerTest_TOP.vhd $dsn/src/lcd_test.vhd $dsn/src/lcd_test_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_controller.vhd
-# Compile Entity "lcd_controller"
-# Compile Architecture "controller" of Entity "lcd_controller"
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/ControllerTest_TOP.vhd
-# Compile Entity "ControllerTest_TOP"
-# Compile Architecture "behavior" of Entity "ControllerTest_TOP"
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_test.vhd
-# Compile Entity "lcd_test"
-# Compile Architecture "Behavioral" of Entity "lcd_test"
-# File: C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/lcd_test_tb.vhd
-# Compile Entity "lcd_test_tb"
-# Compile Architecture "tb" of Entity "lcd_test_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-asim -O5 +access +r +m+lcd_test_tb lcd_test_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6608 kB (elbread=427 elab2=6042 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\src\wave.asdb
-#  11:54, 07 January 2023
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0142 lcd_test_tb.vhd (56): finish called.
-# KERNEL: Time: 59100 us,  Iteration: 0,  Instance: /lcd_test_tb,  Process: sim.
-# KERNEL: stopped at time: 59100 us
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# Waveform file 'C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/untitled.awc' connected to 'C:/Users/retin/Desktop/My_Git/LCD_FPGA/simulation/activehdl/lcd_controller/src/untitled.asdb'.
+# Adding file C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\src\untitled.asdb ... Done
+# Adding file C:\Users\retin\Desktop\My_Git\LCD_FPGA\simulation\activehdl\lcd_controller\src\untitled.awc ... Done

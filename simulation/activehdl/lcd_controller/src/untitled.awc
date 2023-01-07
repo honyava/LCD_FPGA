@@ -1,0 +1,51 @@
+<config>
+    <version>
+        3.1
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="6c6a7754287445c1b9630fbfdb2d0000">untitled.asdb</database>
+    </databases>
+    <gridshown/>
+    <signallists>
+        <signallist id="0">
+        <signal>/lcd_test_tb/clk_tb</signal>
+        <signal>/lcd_test_tb/lcd_data_in_tb</signal>
+        <signal>/lcd_test_tb/e_tb</signal>
+        <signal>/lcd_test_tb/rs_tb</signal>
+        <signal>/lcd_test_tb/rw_tb</signal>
+        <signal>/lcd_test_tb/lcd_data_tb</signal>
+        <signal>/lcd_test_tb/lcd_on_tb</signal>
+        <signal>/lcd_test_tb/lcd_blon_tb</signal>
+        </signallist>
+    </signallists>
+    <timebases>
+        <timebase id="0">
+            <time start_time="0" end_time="190459079" />
+        </timebase>
+    </timebases>
+    <prefbases>
+        <prefbase id="0" >
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="95000000000" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+</config>
