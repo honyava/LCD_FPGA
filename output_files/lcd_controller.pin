@@ -75,15 +75,15 @@ RESERVED_INPUT               : A5        :        :                   :         
 RESERVED_INPUT               : A6        :        :                   :         : 3         :                
 RESERVED_INPUT               : A7        :        :                   :         : 3         :                
 RESERVED_INPUT               : A8        :        :                   :         : 3         :                
-RESERVED_INPUT               : A9        :        :                   :         : 3         :                
-RESERVED_INPUT               : A10       :        :                   :         : 3         :                
+lcd_data_in[11]              : A9        : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[3]               : A10       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : A11       : power  :                   : 3.3V    : 3         :                
 GND                          : A12       : gnd    :                   :         :           :                
 GND+                         : A13       :        :                   :         : 4         :                
-lcd_data_in[14]              : A14       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[21]              : A14       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND                          : A15       : gnd    :                   :         :           :                
 VCCIO4                       : A16       : power  :                   : 3.3V    : 4         :                
-lcd_data_in[11]              : A17       : input  : 3.3-V LVTTL       :         : 4         : N              
+RESERVED_INPUT               : A17       :        :                   :         : 4         :                
 RESERVED_INPUT               : A18       :        :                   :         : 4         :                
 RESERVED_INPUT               : A19       :        :                   :         : 4         :                
 RESERVED_INPUT               : A20       :        :                   :         : 4         :                
@@ -254,15 +254,15 @@ RESERVED_INPUT               : B5        :        :                   :         
 RESERVED_INPUT               : B6        :        :                   :         : 3         :                
 RESERVED_INPUT               : B7        :        :                   :         : 3         :                
 RESERVED_INPUT               : B8        :        :                   :         : 3         :                
-RESERVED_INPUT               : B9        :        :                   :         : 3         :                
-RESERVED_INPUT               : B10       :        :                   :         : 3         :                
-lcd_data_in[28]              : B11       : input  : 3.3-V LVTTL       :         : 3         : N              
-lcd_data_in[8]               : B12       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[16]              : B9        : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[18]              : B10       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[9]               : B11       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[25]              : B12       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : B13       :        :                   :         : 4         :                
-lcd_data_in[6]               : B14       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[17]              : B15       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[7]               : B16       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[22]              : B17       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[22]              : B14       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[13]              : B15       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[4]               : B16       : input  : 3.3-V LVTTL       :         : 4         : N              
+RESERVED_INPUT               : B17       :        :                   :         : 4         :                
 RESERVED_INPUT               : B18       :        :                   :         : 4         :                
 RESERVED_INPUT               : B19       :        :                   :         : 4         :                
 RESERVED_INPUT               : B20       :        :                   :         : 4         :                
@@ -282,12 +282,12 @@ RESERVED_INPUT               : C7        :        :                   :         
 RESERVED_INPUT               : C8        :        :                   :         : 3         :                
 RESERVED_INPUT               : C9        :        :                   :         : 3         :                
 RESERVED_INPUT               : C10       :        :                   :         : 3         :                
-lcd_data_in[5]               : C11       : input  : 3.3-V LVTTL       :         : 3         : N              
-lcd_data_in[4]               : C12       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[0]               : C11       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[24]              : C12       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : C13       :        :                   :         : 3         :                
 GND                          : C14       : gnd    :                   :         :           :                
-lcd_data_in[10]              : C15       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[9]               : C16       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[23]              : C15       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[19]              : C16       : input  : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT               : C17       :        :                   :         : 4         :                
 GND                          : C18       : gnd    :                   :         :           :                
 RESERVED_INPUT               : C19       :        :                   :         : 4         :                
@@ -308,12 +308,12 @@ RESERVED_INPUT               : D7        :        :                   :         
 RESERVED_INPUT               : D8        :        :                   :         : 3         :                
 RESERVED_INPUT               : D9        :        :                   :         : 3         :                
 RESERVED_INPUT               : D10       :        :                   :         : 3         :                
-RESERVED_INPUT               : D11       :        :                   :         : 3         :                
-RESERVED_INPUT               : D12       :        :                   :         : 3         :                
+lcd_data_in[1]               : D11       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[15]              : D12       : input  : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : D13       :        :                   :         : 3         :                
-lcd_data_in[12]              : D14       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[18]              : D15       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[3]               : D16       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[20]              : D14       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[31]              : D15       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[28]              : D16       : input  : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT               : D17       :        :                   :         : 4         :                
 RESERVED_INPUT               : D18       :        :                   :         : 4         :                
 RESERVED_INPUT               : D19       :        :                   :         : 4         :                
@@ -335,10 +335,10 @@ RESERVED_INPUT               : E8        :        :                   :         
 VCCIO3                       : E9        : power  :                   : 3.3V    : 3         :                
 RESERVED_INPUT               : E10       :        :                   :         : 3         :                
 GND                          : E11       : gnd    :                   :         :           :                
-lcd_data_in[16]              : E12       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[10]              : E12       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : E13       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : E14       : power  :                   : 3.3V    : 4         :                
-lcd_data_in[1]               : E15       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[30]              : E15       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND                          : E16       : gnd    :                   :         :           :                
 VCCIO4                       : E17       : power  :                   : 3.3V    : 4         :                
 RESERVED_INPUT               : E18       :        :                   :         : 4         :                
@@ -361,11 +361,11 @@ GNDA_PLL3                    : F8        : gnd    :                   :         
 RESERVED_INPUT               : F9        :        :                   :         : 3         :                
 RESERVED_INPUT               : F10       :        :                   :         : 3         :                
 RESERVED_INPUT               : F11       :        :                   :         : 3         :                
-lcd_data_in[21]              : F12       : input  : 3.3-V LVTTL       :         : 3         : N              
-lcd_data_in[13]              : F13       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[30]              : F14       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[29]              : F15       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[26]              : F16       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[26]              : F12       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[6]               : F13       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[29]              : F14       : input  : 3.3-V LVTTL       :         : 4         : N              
+RESERVED_INPUT               : F15       :        :                   :         : 4         :                
+RESERVED_INPUT               : F16       :        :                   :         : 4         :                
 RESERVED_INPUT               : F17       :        :                   :         : 4         :                
 RESERVED_INPUT               : F18       :        :                   :         : 4         :                
 GNDA_PLL2                    : F19       : gnd    :                   :         :           :                
@@ -386,12 +386,12 @@ GND_PLL3                     : G7        : gnd    :                   :         
 VCCA_PLL3                    : G8        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : G9        :        :                   :         : 3         :                
 RESERVED_INPUT               : G10       :        :                   :         : 3         :                
-RESERVED_INPUT               : G11       :        :                   :         : 3         :                
-lcd_data_in[0]               : G12       : input  : 3.3-V LVTTL       :         : 3         : N              
-lcd_data_in[23]              : G13       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[31]              : G14       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[2]               : G15       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[25]              : G16       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[2]               : G11       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[8]               : G12       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[7]               : G13       : input  : 3.3-V LVTTL       :         : 4         : N              
+lcd_data_in[5]               : G14       : input  : 3.3-V LVTTL       :         : 4         : N              
+RESERVED_INPUT               : G15       :        :                   :         : 4         :                
+RESERVED_INPUT               : G16       :        :                   :         : 4         :                
 RESERVED_INPUT               : G17       :        :                   :         : 4         :                
 RESERVED_INPUT               : G18       :        :                   :         : 4         :                
 VCCA_PLL2                    : G19       : power  :                   : 1.2V    :           :                
@@ -416,8 +416,8 @@ RESERVED_INPUT               : H11       :        :                   :         
 RESERVED_INPUT               : H12       :        :                   :         : 3         :                
 GND                          : H13       : gnd    :                   :         :           :                
 GND                          : H14       : gnd    :                   :         :           :                
-lcd_data_in[27]              : H15       : input  : 3.3-V LVTTL       :         : 4         : N              
-lcd_data_in[19]              : H16       : input  : 3.3-V LVTTL       :         : 4         : N              
+RESERVED_INPUT               : H15       :        :                   :         : 4         :                
+RESERVED_INPUT               : H16       :        :                   :         : 4         :                
 RESERVED_INPUT               : H17       :        :                   :         : 4         :                
 VCCIO4                       : H18       : power  :                   : 3.3V    : 4         :                
 RESERVED_INPUT               : H19       :        :                   :         : 5         :                
@@ -437,11 +437,11 @@ RESERVED_INPUT               : J6        :        :                   :         
 RESERVED_INPUT               : J7        :        :                   :         : 2         :                
 RESERVED_INPUT               : J8        :        :                   :         : 2         :                
 RESERVED_INPUT               : J9        :        :                   :         : 3         :                
-lcd_data_in[15]              : J10       : input  : 3.3-V LVTTL       :         : 3         : N              
-lcd_data_in[20]              : J11       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[17]              : J10       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[27]              : J11       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : J12       : power  :                   : 3.3V    : 3         :                
-RESERVED_INPUT               : J13       :        :                   :         : 3         :                
-lcd_data_in[24]              : J14       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[12]              : J13       : input  : 3.3-V LVTTL       :         : 3         : N              
+lcd_data_in[14]              : J14       : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO4                       : J15       : power  :                   : 3.3V    : 4         :                
 RESERVED_INPUT               : J16       :        :                   :         : 4         :                
 RESERVED_INPUT               : J17       :        :                   :         : 4         :                

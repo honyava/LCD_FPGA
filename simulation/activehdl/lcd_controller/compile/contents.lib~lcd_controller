@@ -1,0 +1,9 @@
+4
+~E 1 "../src/ControllerTest_TOP.vhd" 9 ControllerTest_TOP
+~A 1 "../src/ControllerTest_TOP.vhd" 24 behavior
+~E 1 "../src/lcd_controller.vhd" 45 lcd_controller
+~A 1 "../src/lcd_controller.vhd" 59 controller
+~E 1 "../src/lcd_test.vhd" 7 lcd_test
+~A 1 "../src/lcd_test.vhd" 20 Behavioral
+~E 1 "../src/lcd_test_tb.vhd" 6 lcd_test_tb
+~A 1 "../src/lcd_test_tb.vhd" 9 tb

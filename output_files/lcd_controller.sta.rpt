@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for lcd_controller
-Sat Jan 07 00:21:35 2023
+Sat Jan 07 18:17:52 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -98,7 +98,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------+--------+--------------------------+
 ; SDC File Path      ; Status ; Read at                  ;
 +--------------------+--------+--------------------------+
-; lcd_controller.sdc ; OK     ; Sat Jan 07 00:21:34 2023 ;
+; lcd_controller.sdc ; OK     ; Sat Jan 07 18:17:52 2023 ;
 +--------------------+--------+--------------------------+
 
 
@@ -116,7 +116,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------+-----------------+------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
 +-----------+-----------------+------------+------+
-; 95.16 MHz ; 95.16 MHz       ; clk        ;      ;
+; 98.49 MHz ; 98.49 MHz       ; clk        ;      ;
 +-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -126,7 +126,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; clk   ; 9.491 ; 0.000         ;
+; clk   ; 9.847 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -160,112 +160,112 @@ No paths to report.
 +-------+-------+------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Setup: 'clk'                                                                                                                                          ;
-+--------+----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node                              ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 9.491  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.013     ; 10.532     ;
-; 9.738  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[2]    ; clk          ; clk         ; 20.000       ; 0.006      ; 10.304     ;
-; 9.764  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[3]    ; clk          ; clk         ; 20.000       ; 0.006      ; 10.278     ;
-; 9.771  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[15]   ; clk          ; clk         ; 20.000       ; 0.006      ; 10.271     ;
-; 9.797  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[4]    ; clk          ; clk         ; 20.000       ; 0.006      ; 10.245     ;
-; 9.798  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[1]    ; clk          ; clk         ; 20.000       ; 0.006      ; 10.244     ;
-; 9.799  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[16]   ; clk          ; clk         ; 20.000       ; 0.006      ; 10.243     ;
-; 9.800  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[5]    ; clk          ; clk         ; 20.000       ; 0.006      ; 10.242     ;
-; 9.801  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[14]   ; clk          ; clk         ; 20.000       ; 0.006      ; 10.241     ;
-; 9.863  ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.019     ; 10.154     ;
-; 9.896  ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.019     ; 10.121     ;
-; 9.962  ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.019     ; 10.055     ;
-; 10.026 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|e               ; clk          ; clk         ; 20.000       ; -0.003     ; 10.007     ;
-; 10.035 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.019     ; 9.982      ;
-; 10.043 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[7]    ; clk          ; clk         ; 20.000       ; 0.004      ; 9.997      ;
-; 10.043 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[13]   ; clk          ; clk         ; 20.000       ; 0.003      ; 9.996      ;
-; 10.044 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[18]   ; clk          ; clk         ; 20.000       ; 0.003      ; 9.995      ;
-; 10.048 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[6]    ; clk          ; clk         ; 20.000       ; 0.004      ; 9.992      ;
-; 10.049 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[19]   ; clk          ; clk         ; 20.000       ; 0.003      ; 9.990      ;
-; 10.070 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[17]   ; clk          ; clk         ; 20.000       ; 0.003      ; 9.969      ;
-; 10.071 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[9]    ; clk          ; clk         ; 20.000       ; 0.004      ; 9.969      ;
-; 10.073 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[21]   ; clk          ; clk         ; 20.000       ; 0.003      ; 9.966      ;
-; 10.076 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[12]   ; clk          ; clk         ; 20.000       ; 0.003      ; 9.963      ;
-; 10.076 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[20]   ; clk          ; clk         ; 20.000       ; 0.003      ; 9.963      ;
-; 10.086 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[1]     ; clk          ; clk         ; 20.000       ; -0.013     ; 9.937      ;
-; 10.110 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[2]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.926      ;
-; 10.130 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.016     ; 9.890      ;
-; 10.134 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.019     ; 9.883      ;
-; 10.136 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[3]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.900      ;
-; 10.143 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[2]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.893      ;
-; 10.143 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[15]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.893      ;
-; 10.169 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[3]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.867      ;
-; 10.169 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[4]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.867      ;
-; 10.170 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[1]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.866      ;
-; 10.171 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[16]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.865      ;
-; 10.172 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[5]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.864      ;
-; 10.173 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[14]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.863      ;
-; 10.176 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[15]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.860      ;
-; 10.178 ; lcd_controller:LCD_contr|clk_count[6]  ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.017     ; 9.841      ;
-; 10.181 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[8]    ; clk          ; clk         ; 20.000       ; 0.004      ; 9.859      ;
-; 10.202 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[4]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.834      ;
-; 10.203 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[1]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.833      ;
-; 10.204 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[16]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.832      ;
-; 10.205 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[5]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.831      ;
-; 10.206 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[14]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.830      ;
-; 10.209 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[2]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.827      ;
-; 10.221 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.017     ; 9.798      ;
-; 10.235 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[3]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.801      ;
-; 10.242 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[15]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.794      ;
-; 10.245 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[0]     ; clk          ; clk         ; 20.000       ; -0.013     ; 9.778      ;
-; 10.245 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[3]     ; clk          ; clk         ; 20.000       ; -0.013     ; 9.778      ;
-; 10.245 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[4]     ; clk          ; clk         ; 20.000       ; -0.013     ; 9.778      ;
-; 10.245 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[5]     ; clk          ; clk         ; 20.000       ; -0.013     ; 9.778      ;
-; 10.268 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[4]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.768      ;
-; 10.269 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[1]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.767      ;
-; 10.270 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[16]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.766      ;
-; 10.271 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[5]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.765      ;
-; 10.272 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[14]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.764      ;
-; 10.282 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[2]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.754      ;
-; 10.288 ; lcd_controller:LCD_contr|clk_count[10] ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.013     ; 9.735      ;
-; 10.304 ; lcd_controller:LCD_contr|clk_count[11] ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.013     ; 9.719      ;
-; 10.308 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[3]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.728      ;
-; 10.315 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[15]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.721      ;
-; 10.341 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[4]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.695      ;
-; 10.342 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[1]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.694      ;
-; 10.343 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[16]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.693      ;
-; 10.344 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[5]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.692      ;
-; 10.345 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[14]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.691      ;
-; 10.366 ; ControllerTest_TOP:LCD_user|cnt[4]     ; ControllerTest_TOP:LCD_user|flag_zero[0] ; clk          ; clk         ; 20.000       ; 0.011      ; 9.681      ;
-; 10.377 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|clk_count[2]    ; clk          ; clk         ; 20.000       ; 0.003      ; 9.662      ;
-; 10.381 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[2]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.655      ;
-; 10.398 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|e               ; clk          ; clk         ; 20.000       ; -0.009     ; 9.629      ;
-; 10.403 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|clk_count[3]    ; clk          ; clk         ; 20.000       ; 0.003      ; 9.636      ;
-; 10.407 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[3]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.629      ;
-; 10.410 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|clk_count[15]   ; clk          ; clk         ; 20.000       ; 0.003      ; 9.629      ;
-; 10.412 ; lcd_controller:LCD_contr|clk_count[8]  ; lcd_controller:LCD_contr|lcd_data[2]     ; clk          ; clk         ; 20.000       ; -0.017     ; 9.607      ;
-; 10.414 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[15]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.622      ;
-; 10.415 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[7]    ; clk          ; clk         ; 20.000       ; -0.002     ; 9.619      ;
-; 10.415 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[13]   ; clk          ; clk         ; 20.000       ; -0.003     ; 9.618      ;
-; 10.416 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[18]   ; clk          ; clk         ; 20.000       ; -0.003     ; 9.617      ;
-; 10.420 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[6]    ; clk          ; clk         ; 20.000       ; -0.002     ; 9.614      ;
-; 10.421 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|state.ready     ; clk          ; clk         ; 20.000       ; -0.014     ; 9.601      ;
-; 10.421 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[19]   ; clk          ; clk         ; 20.000       ; -0.003     ; 9.612      ;
-; 10.425 ; lcd_controller:LCD_contr|clk_count[6]  ; lcd_controller:LCD_contr|clk_count[2]    ; clk          ; clk         ; 20.000       ; 0.002      ; 9.613      ;
-; 10.431 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|e               ; clk          ; clk         ; 20.000       ; -0.009     ; 9.596      ;
-; 10.436 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|clk_count[4]    ; clk          ; clk         ; 20.000       ; 0.003      ; 9.603      ;
-; 10.437 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|clk_count[1]    ; clk          ; clk         ; 20.000       ; 0.003      ; 9.602      ;
-; 10.438 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|clk_count[16]   ; clk          ; clk         ; 20.000       ; 0.003      ; 9.601      ;
-; 10.439 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|clk_count[5]    ; clk          ; clk         ; 20.000       ; 0.003      ; 9.600      ;
-; 10.440 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[4]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.596      ;
-; 10.440 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|clk_count[14]   ; clk          ; clk         ; 20.000       ; 0.003      ; 9.599      ;
-; 10.441 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[1]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.595      ;
-; 10.442 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[16]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.594      ;
-; 10.442 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[17]   ; clk          ; clk         ; 20.000       ; -0.003     ; 9.591      ;
-; 10.443 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[5]    ; clk          ; clk         ; 20.000       ; 0.000      ; 9.593      ;
-; 10.443 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[9]    ; clk          ; clk         ; 20.000       ; -0.002     ; 9.591      ;
-; 10.444 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[14]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.592      ;
-; 10.445 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[21]   ; clk          ; clk         ; 20.000       ; -0.003     ; 9.588      ;
-; 10.446 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[25]   ; clk          ; clk         ; 20.000       ; 0.000      ; 9.590      ;
-; 10.448 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[7]    ; clk          ; clk         ; 20.000       ; -0.002     ; 9.586      ;
-+--------+----------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                                                                                        ;
++--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                              ; To Node                                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+; 9.847  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.010     ; 10.179     ;
+; 9.951  ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.010     ; 10.075     ;
+; 9.956  ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.010     ; 10.070     ;
+; 9.987  ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.010     ; 10.039     ;
+; 9.997  ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.011     ; 10.028     ;
+; 10.048 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.010     ; 9.978      ;
+; 10.089 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.005     ; 9.942      ;
+; 10.101 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.011     ; 9.924      ;
+; 10.106 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.011     ; 9.919      ;
+; 10.124 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.010     ; 9.902      ;
+; 10.137 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.011     ; 9.888      ;
+; 10.182 ; lcd_controller:LCD_contr|clk_count[8]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.005     ; 9.849      ;
+; 10.198 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.011     ; 9.827      ;
+; 10.227 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.809      ;
+; 10.228 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.808      ;
+; 10.229 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 9.807      ;
+; 10.232 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.804      ;
+; 10.236 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.800      ;
+; 10.238 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.798      ;
+; 10.239 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.006     ; 9.791      ;
+; 10.252 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.005     ; 9.779      ;
+; 10.264 ; lcd_controller:LCD_contr|clk_count[6]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.010     ; 9.762      ;
+; 10.267 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.764      ;
+; 10.267 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.764      ;
+; 10.268 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.763      ;
+; 10.271 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.760      ;
+; 10.272 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.759      ;
+; 10.274 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.011     ; 9.751      ;
+; 10.331 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.705      ;
+; 10.332 ; lcd_controller:LCD_contr|clk_count[8]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.006     ; 9.698      ;
+; 10.332 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.704      ;
+; 10.333 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 9.703      ;
+; 10.336 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.700      ;
+; 10.336 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.700      ;
+; 10.337 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.699      ;
+; 10.338 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 9.698      ;
+; 10.340 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.696      ;
+; 10.341 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.695      ;
+; 10.342 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.694      ;
+; 10.345 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.691      ;
+; 10.347 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.689      ;
+; 10.364 ; lcd_controller:LCD_contr|clk_count[10] ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.004     ; 9.668      ;
+; 10.367 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.669      ;
+; 10.368 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.668      ;
+; 10.369 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 9.667      ;
+; 10.371 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.660      ;
+; 10.371 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.660      ;
+; 10.372 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.664      ;
+; 10.372 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.659      ;
+; 10.375 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.656      ;
+; 10.376 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.660      ;
+; 10.376 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.655      ;
+; 10.376 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.655      ;
+; 10.376 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.655      ;
+; 10.377 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.654      ;
+; 10.378 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.658      ;
+; 10.380 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.651      ;
+; 10.381 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.650      ;
+; 10.402 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.006     ; 9.628      ;
+; 10.407 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.624      ;
+; 10.407 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.624      ;
+; 10.408 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.623      ;
+; 10.411 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.620      ;
+; 10.412 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.619      ;
+; 10.414 ; lcd_controller:LCD_contr|clk_count[6]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.011     ; 9.611      ;
+; 10.428 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.608      ;
+; 10.429 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.607      ;
+; 10.430 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 9.606      ;
+; 10.433 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.603      ;
+; 10.437 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.599      ;
+; 10.439 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.597      ;
+; 10.445 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[1]   ; clk          ; clk         ; 20.000       ; -0.010     ; 9.581      ;
+; 10.455 ; lcd_controller:LCD_contr|clk_count[11] ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.010     ; 9.571      ;
+; 10.468 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.563      ;
+; 10.468 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.563      ;
+; 10.469 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.005      ; 9.572      ;
+; 10.469 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.562      ;
+; 10.470 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.005      ; 9.571      ;
+; 10.471 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.005      ; 9.570      ;
+; 10.472 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.559      ;
+; 10.473 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.005     ; 9.558      ;
+; 10.474 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.005      ; 9.567      ;
+; 10.478 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[0]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.558      ;
+; 10.478 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.005      ; 9.563      ;
+; 10.480 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.005      ; 9.561      ;
+; 10.483 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[2]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.553      ;
+; 10.486 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[3]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.550      ;
+; 10.504 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.532      ;
+; 10.505 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.531      ;
+; 10.506 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 9.530      ;
+; 10.509 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.527      ;
+; 10.509 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.527      ;
+; 10.509 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; 0.000      ; 9.527      ;
+; 10.510 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.526      ;
+; 10.513 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.523      ;
+; 10.513 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; 0.000      ; 9.523      ;
+; 10.514 ; lcd_controller:LCD_contr|clk_count[10] ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.005     ; 9.517      ;
+; 10.514 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; 0.000      ; 9.522      ;
+; 10.515 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 9.521      ;
+; 10.544 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.005     ; 9.487      ;
++--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -274,55 +274,78 @@ No paths to report.
 ; Slack ; From Node                                    ; To Node                                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------------------------------+----------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; 0.391 ; lcd_controller:LCD_contr|state.power_up      ; lcd_controller:LCD_contr|state.power_up      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; lcd_controller:LCD_contr|state.initialize    ; lcd_controller:LCD_contr|state.initialize    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; ControllerTest_TOP:LCD_user|global_count2[0] ; ControllerTest_TOP:LCD_user|global_count2[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; ControllerTest_TOP:LCD_user|send_flag[0]     ; ControllerTest_TOP:LCD_user|send_flag[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; ControllerTest_TOP:LCD_user|bindec[8]        ; ControllerTest_TOP:LCD_user|bindec[8]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; ControllerTest_TOP:LCD_user|bindec[9]        ; ControllerTest_TOP:LCD_user|bindec[9]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; ControllerTest_TOP:LCD_user|bindec[7]        ; ControllerTest_TOP:LCD_user|bindec[7]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; ControllerTest_TOP:LCD_user|bindec[6]        ; ControllerTest_TOP:LCD_user|bindec[6]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; ControllerTest_TOP:LCD_user|bindec[5]        ; ControllerTest_TOP:LCD_user|bindec[5]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; ControllerTest_TOP:LCD_user|bindec[4]        ; ControllerTest_TOP:LCD_user|bindec[4]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; ControllerTest_TOP:LCD_user|bindec[7]        ; ControllerTest_TOP:LCD_user|bindec[7]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; ControllerTest_TOP:LCD_user|bindec[9]        ; ControllerTest_TOP:LCD_user|bindec[9]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; ControllerTest_TOP:LCD_user|bindec[8]        ; ControllerTest_TOP:LCD_user|bindec[8]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; ControllerTest_TOP:LCD_user|flag_zero[0]     ; ControllerTest_TOP:LCD_user|flag_zero[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; ControllerTest_TOP:LCD_user|global_count[0]  ; ControllerTest_TOP:LCD_user|global_count[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; ControllerTest_TOP:LCD_user|bindec[3]        ; ControllerTest_TOP:LCD_user|bindec[3]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; ControllerTest_TOP:LCD_user|bindec[2]        ; ControllerTest_TOP:LCD_user|bindec[2]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; lcd_controller:LCD_contr|state.send          ; lcd_controller:LCD_contr|state.send          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; lcd_controller:LCD_contr|state.initialize    ; lcd_controller:LCD_contr|state.initialize    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; lcd_controller:LCD_contr|rs                  ; lcd_controller:LCD_contr|rs                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; ControllerTest_TOP:LCD_user|bindec[0]        ; ControllerTest_TOP:LCD_user|bindec[0]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; ControllerTest_TOP:LCD_user|bindec[1]        ; ControllerTest_TOP:LCD_user|bindec[1]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; ControllerTest_TOP:LCD_user|bindec[0]        ; ControllerTest_TOP:LCD_user|bindec[0]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; ControllerTest_TOP:LCD_user|lcd_bus[1]       ; ControllerTest_TOP:LCD_user|lcd_bus[1]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.521 ; ControllerTest_TOP:LCD_user|div_freq_lcd[30] ; ControllerTest_TOP:LCD_user|div_freq_lcd[30] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.787      ;
-; 0.524 ; ControllerTest_TOP:LCD_user|first_number     ; ControllerTest_TOP:LCD_user|lcd_bus[1]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.790      ;
-; 0.530 ; ControllerTest_TOP:LCD_user|char[4]          ; ControllerTest_TOP:LCD_user|char[4]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.796      ;
+; 0.517 ; ControllerTest_TOP:LCD_user|global_count2[0] ; ControllerTest_TOP:LCD_user|global_count[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.783      ;
+; 0.531 ; ControllerTest_TOP:LCD_user|l[31]            ; ControllerTest_TOP:LCD_user|l[31]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.797      ;
 ; 0.531 ; ControllerTest_TOP:LCD_user|k[31]            ; ControllerTest_TOP:LCD_user|k[31]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.797      ;
-; 0.540 ; lcd_controller:LCD_contr|state.initialize    ; lcd_controller:LCD_contr|busy                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.806      ;
-; 0.552 ; ControllerTest_TOP:LCD_user|send_flag[0]     ; ControllerTest_TOP:LCD_user|bindec[0]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.818      ;
-; 0.568 ; ControllerTest_TOP:LCD_user|cnt[4]           ; ControllerTest_TOP:LCD_user|cnt[4]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.834      ;
-; 0.786 ; lcd_controller:LCD_contr|state.initialize    ; lcd_controller:LCD_contr|clk_count[31]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.052      ;
-; 0.791 ; ControllerTest_TOP:LCD_user|j[16]            ; ControllerTest_TOP:LCD_user|j[16]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.057      ;
-; 0.794 ; ControllerTest_TOP:LCD_user|char[0]          ; ControllerTest_TOP:LCD_user|char[0]          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.060      ;
-; 0.795 ; ControllerTest_TOP:LCD_user|char[2]          ; ControllerTest_TOP:LCD_user|char[2]          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
-; 0.795 ; ControllerTest_TOP:LCD_user|j[17]            ; ControllerTest_TOP:LCD_user|j[17]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
+; 0.538 ; ControllerTest_TOP:LCD_user|char[4]          ; ControllerTest_TOP:LCD_user|char[4]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.804      ;
+; 0.565 ; ControllerTest_TOP:LCD_user|cnt[4]           ; ControllerTest_TOP:LCD_user|cnt[4]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.831      ;
+; 0.672 ; lcd_controller:LCD_contr|state.initialize    ; lcd_controller:LCD_contr|clk_count[31]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.938      ;
+; 0.673 ; lcd_controller:LCD_contr|state.send          ; lcd_controller:LCD_contr|state.ready         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.939      ;
+; 0.757 ; ControllerTest_TOP:LCD_user|send_flag[0]     ; ControllerTest_TOP:LCD_user|bindec[2]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.023      ;
+; 0.759 ; ControllerTest_TOP:LCD_user|send_flag[0]     ; ControllerTest_TOP:LCD_user|bindec[3]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.025      ;
+; 0.794 ; ControllerTest_TOP:LCD_user|div_freq_lcd[30] ; ControllerTest_TOP:LCD_user|div_freq_lcd[30] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.060      ;
+; 0.795 ; ControllerTest_TOP:LCD_user|l[0]             ; ControllerTest_TOP:LCD_user|l[0]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
+; 0.795 ; ControllerTest_TOP:LCD_user|l[16]            ; ControllerTest_TOP:LCD_user|l[16]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
+; 0.795 ; ControllerTest_TOP:LCD_user|div_freq_lcd[16] ; ControllerTest_TOP:LCD_user|div_freq_lcd[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
+; 0.795 ; ControllerTest_TOP:LCD_user|div_freq_lcd[18] ; ControllerTest_TOP:LCD_user|div_freq_lcd[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
 ; 0.795 ; ControllerTest_TOP:LCD_user|j[1]             ; ControllerTest_TOP:LCD_user|j[1]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
-; 0.795 ; ControllerTest_TOP:LCD_user|j[31]            ; ControllerTest_TOP:LCD_user|j[31]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
+; 0.795 ; ControllerTest_TOP:LCD_user|j[0]             ; ControllerTest_TOP:LCD_user|j[0]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
 ; 0.795 ; ControllerTest_TOP:LCD_user|k[0]             ; ControllerTest_TOP:LCD_user|k[0]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
 ; 0.795 ; ControllerTest_TOP:LCD_user|k[16]            ; ControllerTest_TOP:LCD_user|k[16]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
-; 0.799 ; ControllerTest_TOP:LCD_user|j[0]             ; ControllerTest_TOP:LCD_user|j[0]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.065      ;
-; 0.801 ; ControllerTest_TOP:LCD_user|div_freq_lcd[9]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.067      ;
-; 0.801 ; ControllerTest_TOP:LCD_user|div_freq_lcd[18] ; ControllerTest_TOP:LCD_user|div_freq_lcd[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.067      ;
-; 0.802 ; ControllerTest_TOP:LCD_user|div_freq_lcd[11] ; ControllerTest_TOP:LCD_user|div_freq_lcd[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
-; 0.802 ; ControllerTest_TOP:LCD_user|div_freq_lcd[20] ; ControllerTest_TOP:LCD_user|div_freq_lcd[20] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
+; 0.798 ; ControllerTest_TOP:LCD_user|char[0]          ; ControllerTest_TOP:LCD_user|char[0]          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.064      ;
+; 0.801 ; ControllerTest_TOP:LCD_user|div_freq_lcd[17] ; ControllerTest_TOP:LCD_user|div_freq_lcd[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.067      ;
+; 0.801 ; ControllerTest_TOP:LCD_user|j[25]            ; ControllerTest_TOP:LCD_user|j[25]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.067      ;
+; 0.802 ; ControllerTest_TOP:LCD_user|l[4]             ; ControllerTest_TOP:LCD_user|l[4]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
+; 0.802 ; ControllerTest_TOP:LCD_user|l[7]             ; ControllerTest_TOP:LCD_user|l[7]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
+; 0.802 ; ControllerTest_TOP:LCD_user|div_freq_lcd[7]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
 ; 0.802 ; ControllerTest_TOP:LCD_user|j[4]             ; ControllerTest_TOP:LCD_user|j[4]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
-; 0.802 ; ControllerTest_TOP:LCD_user|j[18]            ; ControllerTest_TOP:LCD_user|j[18]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
-; 0.802 ; ControllerTest_TOP:LCD_user|j[20]            ; ControllerTest_TOP:LCD_user|j[20]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
+; 0.802 ; ControllerTest_TOP:LCD_user|j[27]            ; ControllerTest_TOP:LCD_user|j[27]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
+; 0.802 ; ControllerTest_TOP:LCD_user|j[30]            ; ControllerTest_TOP:LCD_user|j[30]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
 ; 0.802 ; ControllerTest_TOP:LCD_user|j[2]             ; ControllerTest_TOP:LCD_user|j[2]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
 ; 0.802 ; ControllerTest_TOP:LCD_user|k[4]             ; ControllerTest_TOP:LCD_user|k[4]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
 ; 0.802 ; ControllerTest_TOP:LCD_user|k[7]             ; ControllerTest_TOP:LCD_user|k[7]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
-; 0.805 ; ControllerTest_TOP:LCD_user|div_freq_lcd[17] ; ControllerTest_TOP:LCD_user|div_freq_lcd[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.071      ;
+; 0.803 ; ControllerTest_TOP:LCD_user|char[2]          ; ControllerTest_TOP:LCD_user|char[2]          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.069      ;
+; 0.803 ; ControllerTest_TOP:LCD_user|char[3]          ; ControllerTest_TOP:LCD_user|char[3]          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.069      ;
+; 0.804 ; ControllerTest_TOP:LCD_user|char[4]          ; ControllerTest_TOP:LCD_user|lcd_enable       ; clk          ; clk         ; 0.000        ; 0.001      ; 1.071      ;
+; 0.805 ; ControllerTest_TOP:LCD_user|l[1]             ; ControllerTest_TOP:LCD_user|l[1]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.071      ;
+; 0.805 ; ControllerTest_TOP:LCD_user|l[17]            ; ControllerTest_TOP:LCD_user|l[17]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.071      ;
+; 0.805 ; ControllerTest_TOP:LCD_user|j[31]            ; ControllerTest_TOP:LCD_user|j[31]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.071      ;
 ; 0.805 ; ControllerTest_TOP:LCD_user|k[1]             ; ControllerTest_TOP:LCD_user|k[1]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.071      ;
 ; 0.805 ; ControllerTest_TOP:LCD_user|k[17]            ; ControllerTest_TOP:LCD_user|k[17]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.071      ;
-; 0.806 ; ControllerTest_TOP:LCD_user|div_freq_lcd[13] ; ControllerTest_TOP:LCD_user|div_freq_lcd[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
-; 0.806 ; ControllerTest_TOP:LCD_user|div_freq_lcd[14] ; ControllerTest_TOP:LCD_user|div_freq_lcd[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
-; 0.806 ; ControllerTest_TOP:LCD_user|div_freq_lcd[15] ; ControllerTest_TOP:LCD_user|div_freq_lcd[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
-; 0.806 ; ControllerTest_TOP:LCD_user|j[23]            ; ControllerTest_TOP:LCD_user|j[23]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[9]             ; ControllerTest_TOP:LCD_user|l[9]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[11]            ; ControllerTest_TOP:LCD_user|l[11]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[13]            ; ControllerTest_TOP:LCD_user|l[13]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[14]            ; ControllerTest_TOP:LCD_user|l[14]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[15]            ; ControllerTest_TOP:LCD_user|l[15]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[18]            ; ControllerTest_TOP:LCD_user|l[18]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[20]            ; ControllerTest_TOP:LCD_user|l[20]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[23]            ; ControllerTest_TOP:LCD_user|l[23]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[25]            ; ControllerTest_TOP:LCD_user|l[25]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[27]            ; ControllerTest_TOP:LCD_user|l[27]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[29]            ; ControllerTest_TOP:LCD_user|l[29]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|l[30]            ; ControllerTest_TOP:LCD_user|l[30]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|div_freq_lcd[2]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|div_freq_lcd[4]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
 ; 0.806 ; ControllerTest_TOP:LCD_user|j[7]             ; ControllerTest_TOP:LCD_user|j[7]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; ControllerTest_TOP:LCD_user|j[29]            ; ControllerTest_TOP:LCD_user|j[29]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
 ; 0.806 ; ControllerTest_TOP:LCD_user|k[9]             ; ControllerTest_TOP:LCD_user|k[9]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
 ; 0.806 ; ControllerTest_TOP:LCD_user|k[11]            ; ControllerTest_TOP:LCD_user|k[11]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
 ; 0.806 ; ControllerTest_TOP:LCD_user|k[13]            ; ControllerTest_TOP:LCD_user|k[13]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
@@ -335,44 +358,21 @@ No paths to report.
 ; 0.806 ; ControllerTest_TOP:LCD_user|k[27]            ; ControllerTest_TOP:LCD_user|k[27]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
 ; 0.806 ; ControllerTest_TOP:LCD_user|k[29]            ; ControllerTest_TOP:LCD_user|k[29]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
 ; 0.806 ; ControllerTest_TOP:LCD_user|k[30]            ; ControllerTest_TOP:LCD_user|k[30]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
-; 0.826 ; ControllerTest_TOP:LCD_user|div_freq_lcd[21] ; ControllerTest_TOP:LCD_user|div_freq_lcd[21] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.092      ;
-; 0.827 ; ControllerTest_TOP:LCD_user|div_freq_lcd[8]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.093      ;
-; 0.828 ; ControllerTest_TOP:LCD_user|div_freq_lcd[16] ; ControllerTest_TOP:LCD_user|div_freq_lcd[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.094      ;
-; 0.831 ; ControllerTest_TOP:LCD_user|char[1]          ; ControllerTest_TOP:LCD_user|char[1]          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.097      ;
-; 0.831 ; ControllerTest_TOP:LCD_user|char[3]          ; ControllerTest_TOP:LCD_user|char[3]          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.097      ;
-; 0.835 ; ControllerTest_TOP:LCD_user|lcd_enable       ; lcd_controller:LCD_contr|state.send          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.101      ;
-; 0.836 ; ControllerTest_TOP:LCD_user|div_freq_lcd[3]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.102      ;
-; 0.837 ; ControllerTest_TOP:LCD_user|div_freq_lcd[5]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.103      ;
-; 0.837 ; lcd_controller:LCD_contr|state.send          ; lcd_controller:LCD_contr|state.ready         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.103      ;
+; 0.810 ; ControllerTest_TOP:LCD_user|send_flag[0]     ; ControllerTest_TOP:LCD_user|bindec[0]        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.076      ;
+; 0.813 ; ControllerTest_TOP:LCD_user|char[4]          ; ControllerTest_TOP:LCD_user|global_count2[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.079      ;
+; 0.821 ; ControllerTest_TOP:LCD_user|char[1]          ; ControllerTest_TOP:LCD_user|char[1]          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.087      ;
+; 0.830 ; lcd_controller:LCD_contr|state.ready         ; lcd_controller:LCD_contr|state.send          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.096      ;
+; 0.834 ; ControllerTest_TOP:LCD_user|div_freq_lcd[12] ; ControllerTest_TOP:LCD_user|div_freq_lcd[12] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.100      ;
+; 0.838 ; ControllerTest_TOP:LCD_user|l[3]             ; ControllerTest_TOP:LCD_user|l[3]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; ControllerTest_TOP:LCD_user|l[8]             ; ControllerTest_TOP:LCD_user|l[8]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; ControllerTest_TOP:LCD_user|l[10]            ; ControllerTest_TOP:LCD_user|l[10]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; ControllerTest_TOP:LCD_user|l[12]            ; ControllerTest_TOP:LCD_user|l[12]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; ControllerTest_TOP:LCD_user|l[19]            ; ControllerTest_TOP:LCD_user|l[19]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; ControllerTest_TOP:LCD_user|l[24]            ; ControllerTest_TOP:LCD_user|l[24]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; ControllerTest_TOP:LCD_user|l[26]            ; ControllerTest_TOP:LCD_user|l[26]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; ControllerTest_TOP:LCD_user|l[28]            ; ControllerTest_TOP:LCD_user|l[28]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; ControllerTest_TOP:LCD_user|div_freq_lcd[10] ; ControllerTest_TOP:LCD_user|div_freq_lcd[10] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
 ; 0.838 ; ControllerTest_TOP:LCD_user|div_freq_lcd[26] ; ControllerTest_TOP:LCD_user|div_freq_lcd[26] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|j[26]            ; ControllerTest_TOP:LCD_user|j[26]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|j[24]            ; ControllerTest_TOP:LCD_user|j[24]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|j[10]            ; ControllerTest_TOP:LCD_user|j[10]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|j[8]             ; ControllerTest_TOP:LCD_user|j[8]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|j[12]            ; ControllerTest_TOP:LCD_user|j[12]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|j[28]            ; ControllerTest_TOP:LCD_user|j[28]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|k[3]             ; ControllerTest_TOP:LCD_user|k[3]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|k[8]             ; ControllerTest_TOP:LCD_user|k[8]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|k[10]            ; ControllerTest_TOP:LCD_user|k[10]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|k[12]            ; ControllerTest_TOP:LCD_user|k[12]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|k[19]            ; ControllerTest_TOP:LCD_user|k[19]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|k[24]            ; ControllerTest_TOP:LCD_user|k[24]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|k[26]            ; ControllerTest_TOP:LCD_user|k[26]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.838 ; ControllerTest_TOP:LCD_user|k[28]            ; ControllerTest_TOP:LCD_user|k[28]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
-; 0.839 ; ControllerTest_TOP:LCD_user|div_freq_lcd[6]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.105      ;
-; 0.839 ; ControllerTest_TOP:LCD_user|k[5]             ; ControllerTest_TOP:LCD_user|k[5]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.105      ;
-; 0.839 ; ControllerTest_TOP:LCD_user|k[6]             ; ControllerTest_TOP:LCD_user|k[6]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.105      ;
-; 0.839 ; ControllerTest_TOP:LCD_user|k[21]            ; ControllerTest_TOP:LCD_user|k[21]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.105      ;
-; 0.839 ; ControllerTest_TOP:LCD_user|k[22]            ; ControllerTest_TOP:LCD_user|k[22]            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.105      ;
-; 0.842 ; ControllerTest_TOP:LCD_user|div_freq_lcd[28] ; ControllerTest_TOP:LCD_user|div_freq_lcd[28] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.108      ;
-; 0.855 ; lcd_controller:LCD_contr|state.ready         ; lcd_controller:LCD_contr|state.send          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.121      ;
-; 0.867 ; ControllerTest_TOP:LCD_user|lcd_enable       ; lcd_controller:LCD_contr|lcd_data[5]         ; clk          ; clk         ; 0.000        ; 0.001      ; 1.134      ;
-; 0.868 ; ControllerTest_TOP:LCD_user|lcd_enable       ; lcd_controller:LCD_contr|lcd_data[1]         ; clk          ; clk         ; 0.000        ; 0.001      ; 1.135      ;
-; 0.872 ; ControllerTest_TOP:LCD_user|lcd_enable       ; lcd_controller:LCD_contr|lcd_data[4]         ; clk          ; clk         ; 0.000        ; 0.001      ; 1.139      ;
-; 0.873 ; ControllerTest_TOP:LCD_user|cnt[3]           ; ControllerTest_TOP:LCD_user|cnt[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.139      ;
-; 0.921 ; lcd_controller:LCD_contr|e                   ; lcd_controller:LCD_contr|e                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.187      ;
-; 0.934 ; lcd_controller:LCD_contr|state.power_up      ; lcd_controller:LCD_contr|clk_count[31]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.200      ;
-; 0.942 ; ControllerTest_TOP:LCD_user|bindec[1]        ; ControllerTest_TOP:LCD_user|to_lcd[1]        ; clk          ; clk         ; 0.000        ; -0.004     ; 1.204      ;
 +-------+----------------------------------------------+----------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -401,6 +401,8 @@ No paths to report.
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|bindec[8]        ;
 ; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|bindec[9]        ;
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|bindec[9]        ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|change           ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|change           ;
 ; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|char[0]          ;
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|char[0]          ;
 ; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|char[1]          ;
@@ -477,8 +479,6 @@ No paths to report.
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|div_freq_lcd[8]  ;
 ; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|div_freq_lcd[9]  ;
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|div_freq_lcd[9]  ;
-; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|first_number     ;
-; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|first_number     ;
 ; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|flag_zero[0]     ;
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|flag_zero[0]     ;
 +-------+--------------+----------------+------------------+-------+------------+----------------------------------------------+
@@ -489,39 +489,39 @@ No paths to report.
 +------------------+------------+--------+--------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------------+------------+--------+--------+------------+-----------------+
-; lcd_data_in[*]   ; clk        ; 12.509 ; 12.509 ; Rise       ; clk             ;
-;  lcd_data_in[0]  ; clk        ; 7.370  ; 7.370  ; Rise       ; clk             ;
-;  lcd_data_in[1]  ; clk        ; 8.180  ; 8.180  ; Rise       ; clk             ;
-;  lcd_data_in[2]  ; clk        ; 10.242 ; 10.242 ; Rise       ; clk             ;
-;  lcd_data_in[3]  ; clk        ; 10.887 ; 10.887 ; Rise       ; clk             ;
-;  lcd_data_in[4]  ; clk        ; 12.509 ; 12.509 ; Rise       ; clk             ;
-;  lcd_data_in[5]  ; clk        ; 12.222 ; 12.222 ; Rise       ; clk             ;
-;  lcd_data_in[6]  ; clk        ; 11.781 ; 11.781 ; Rise       ; clk             ;
-;  lcd_data_in[7]  ; clk        ; 11.987 ; 11.987 ; Rise       ; clk             ;
-;  lcd_data_in[8]  ; clk        ; 6.881  ; 6.881  ; Rise       ; clk             ;
-;  lcd_data_in[9]  ; clk        ; 8.274  ; 8.274  ; Rise       ; clk             ;
-;  lcd_data_in[10] ; clk        ; 10.027 ; 10.027 ; Rise       ; clk             ;
-;  lcd_data_in[11] ; clk        ; 10.426 ; 10.426 ; Rise       ; clk             ;
-;  lcd_data_in[12] ; clk        ; 12.075 ; 12.075 ; Rise       ; clk             ;
-;  lcd_data_in[13] ; clk        ; 11.828 ; 11.828 ; Rise       ; clk             ;
-;  lcd_data_in[14] ; clk        ; 11.399 ; 11.399 ; Rise       ; clk             ;
-;  lcd_data_in[15] ; clk        ; 11.886 ; 11.886 ; Rise       ; clk             ;
-;  lcd_data_in[16] ; clk        ; 7.674  ; 7.674  ; Rise       ; clk             ;
-;  lcd_data_in[17] ; clk        ; 7.549  ; 7.549  ; Rise       ; clk             ;
-;  lcd_data_in[18] ; clk        ; 9.621  ; 9.621  ; Rise       ; clk             ;
-;  lcd_data_in[19] ; clk        ; 10.909 ; 10.909 ; Rise       ; clk             ;
-;  lcd_data_in[20] ; clk        ; 11.884 ; 11.884 ; Rise       ; clk             ;
-;  lcd_data_in[21] ; clk        ; 11.585 ; 11.585 ; Rise       ; clk             ;
-;  lcd_data_in[22] ; clk        ; 12.262 ; 12.262 ; Rise       ; clk             ;
-;  lcd_data_in[23] ; clk        ; 12.079 ; 12.079 ; Rise       ; clk             ;
-;  lcd_data_in[24] ; clk        ; 7.170  ; 7.170  ; Rise       ; clk             ;
-;  lcd_data_in[25] ; clk        ; 7.690  ; 7.690  ; Rise       ; clk             ;
-;  lcd_data_in[26] ; clk        ; 9.495  ; 9.495  ; Rise       ; clk             ;
-;  lcd_data_in[27] ; clk        ; 10.146 ; 10.146 ; Rise       ; clk             ;
-;  lcd_data_in[28] ; clk        ; 11.714 ; 11.714 ; Rise       ; clk             ;
-;  lcd_data_in[29] ; clk        ; 11.653 ; 11.653 ; Rise       ; clk             ;
-;  lcd_data_in[30] ; clk        ; 11.408 ; 11.408 ; Rise       ; clk             ;
-;  lcd_data_in[31] ; clk        ; 11.062 ; 11.062 ; Rise       ; clk             ;
+; lcd_data_in[*]   ; clk        ; 12.463 ; 12.463 ; Rise       ; clk             ;
+;  lcd_data_in[0]  ; clk        ; 10.091 ; 10.091 ; Rise       ; clk             ;
+;  lcd_data_in[1]  ; clk        ; 10.507 ; 10.507 ; Rise       ; clk             ;
+;  lcd_data_in[2]  ; clk        ; 10.501 ; 10.501 ; Rise       ; clk             ;
+;  lcd_data_in[3]  ; clk        ; 11.417 ; 11.417 ; Rise       ; clk             ;
+;  lcd_data_in[4]  ; clk        ; 11.143 ; 11.143 ; Rise       ; clk             ;
+;  lcd_data_in[5]  ; clk        ; 11.565 ; 11.565 ; Rise       ; clk             ;
+;  lcd_data_in[6]  ; clk        ; 11.271 ; 11.271 ; Rise       ; clk             ;
+;  lcd_data_in[7]  ; clk        ; 11.425 ; 11.425 ; Rise       ; clk             ;
+;  lcd_data_in[8]  ; clk        ; 10.419 ; 10.419 ; Rise       ; clk             ;
+;  lcd_data_in[9]  ; clk        ; 10.256 ; 10.256 ; Rise       ; clk             ;
+;  lcd_data_in[10] ; clk        ; 11.034 ; 11.034 ; Rise       ; clk             ;
+;  lcd_data_in[11] ; clk        ; 11.468 ; 11.468 ; Rise       ; clk             ;
+;  lcd_data_in[12] ; clk        ; 10.996 ; 10.996 ; Rise       ; clk             ;
+;  lcd_data_in[13] ; clk        ; 11.779 ; 11.779 ; Rise       ; clk             ;
+;  lcd_data_in[14] ; clk        ; 10.721 ; 10.721 ; Rise       ; clk             ;
+;  lcd_data_in[15] ; clk        ; 11.623 ; 11.623 ; Rise       ; clk             ;
+;  lcd_data_in[16] ; clk        ; 12.463 ; 12.463 ; Rise       ; clk             ;
+;  lcd_data_in[17] ; clk        ; 11.431 ; 11.431 ; Rise       ; clk             ;
+;  lcd_data_in[18] ; clk        ; 11.467 ; 11.467 ; Rise       ; clk             ;
+;  lcd_data_in[19] ; clk        ; 11.481 ; 11.481 ; Rise       ; clk             ;
+;  lcd_data_in[20] ; clk        ; 11.608 ; 11.608 ; Rise       ; clk             ;
+;  lcd_data_in[21] ; clk        ; 11.748 ; 11.748 ; Rise       ; clk             ;
+;  lcd_data_in[22] ; clk        ; 11.672 ; 11.672 ; Rise       ; clk             ;
+;  lcd_data_in[23] ; clk        ; 11.820 ; 11.820 ; Rise       ; clk             ;
+;  lcd_data_in[24] ; clk        ; 10.091 ; 10.091 ; Rise       ; clk             ;
+;  lcd_data_in[25] ; clk        ; 10.048 ; 10.048 ; Rise       ; clk             ;
+;  lcd_data_in[26] ; clk        ; 9.782  ; 9.782  ; Rise       ; clk             ;
+;  lcd_data_in[27] ; clk        ; 10.320 ; 10.320 ; Rise       ; clk             ;
+;  lcd_data_in[28] ; clk        ; 11.317 ; 11.317 ; Rise       ; clk             ;
+;  lcd_data_in[29] ; clk        ; 10.560 ; 10.560 ; Rise       ; clk             ;
+;  lcd_data_in[30] ; clk        ; 11.314 ; 11.314 ; Rise       ; clk             ;
+;  lcd_data_in[31] ; clk        ; 11.343 ; 11.343 ; Rise       ; clk             ;
 +------------------+------------+--------+--------+------------+-----------------+
 
 
@@ -530,74 +530,74 @@ No paths to report.
 +------------------+------------+--------+--------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------------+------------+--------+--------+------------+-----------------+
-; lcd_data_in[*]   ; clk        ; -4.186 ; -4.186 ; Rise       ; clk             ;
-;  lcd_data_in[0]  ; clk        ; -4.921 ; -4.921 ; Rise       ; clk             ;
-;  lcd_data_in[1]  ; clk        ; -4.817 ; -4.817 ; Rise       ; clk             ;
-;  lcd_data_in[2]  ; clk        ; -5.755 ; -5.755 ; Rise       ; clk             ;
-;  lcd_data_in[3]  ; clk        ; -5.647 ; -5.647 ; Rise       ; clk             ;
-;  lcd_data_in[4]  ; clk        ; -5.773 ; -5.773 ; Rise       ; clk             ;
-;  lcd_data_in[5]  ; clk        ; -5.686 ; -5.686 ; Rise       ; clk             ;
-;  lcd_data_in[6]  ; clk        ; -5.969 ; -5.969 ; Rise       ; clk             ;
-;  lcd_data_in[7]  ; clk        ; -5.567 ; -5.567 ; Rise       ; clk             ;
-;  lcd_data_in[8]  ; clk        ; -4.432 ; -4.432 ; Rise       ; clk             ;
-;  lcd_data_in[9]  ; clk        ; -4.911 ; -4.911 ; Rise       ; clk             ;
-;  lcd_data_in[10] ; clk        ; -5.540 ; -5.540 ; Rise       ; clk             ;
-;  lcd_data_in[11] ; clk        ; -5.186 ; -5.186 ; Rise       ; clk             ;
-;  lcd_data_in[12] ; clk        ; -5.339 ; -5.339 ; Rise       ; clk             ;
-;  lcd_data_in[13] ; clk        ; -5.292 ; -5.292 ; Rise       ; clk             ;
-;  lcd_data_in[14] ; clk        ; -5.587 ; -5.587 ; Rise       ; clk             ;
-;  lcd_data_in[15] ; clk        ; -5.466 ; -5.466 ; Rise       ; clk             ;
-;  lcd_data_in[16] ; clk        ; -5.225 ; -5.225 ; Rise       ; clk             ;
-;  lcd_data_in[17] ; clk        ; -4.186 ; -4.186 ; Rise       ; clk             ;
-;  lcd_data_in[18] ; clk        ; -5.134 ; -5.134 ; Rise       ; clk             ;
-;  lcd_data_in[19] ; clk        ; -5.669 ; -5.669 ; Rise       ; clk             ;
-;  lcd_data_in[20] ; clk        ; -5.148 ; -5.148 ; Rise       ; clk             ;
-;  lcd_data_in[21] ; clk        ; -5.049 ; -5.049 ; Rise       ; clk             ;
-;  lcd_data_in[22] ; clk        ; -6.450 ; -6.450 ; Rise       ; clk             ;
-;  lcd_data_in[23] ; clk        ; -5.659 ; -5.659 ; Rise       ; clk             ;
-;  lcd_data_in[24] ; clk        ; -4.721 ; -4.721 ; Rise       ; clk             ;
-;  lcd_data_in[25] ; clk        ; -4.327 ; -4.327 ; Rise       ; clk             ;
-;  lcd_data_in[26] ; clk        ; -5.008 ; -5.008 ; Rise       ; clk             ;
-;  lcd_data_in[27] ; clk        ; -4.906 ; -4.906 ; Rise       ; clk             ;
-;  lcd_data_in[28] ; clk        ; -4.978 ; -4.978 ; Rise       ; clk             ;
-;  lcd_data_in[29] ; clk        ; -5.117 ; -5.117 ; Rise       ; clk             ;
-;  lcd_data_in[30] ; clk        ; -5.596 ; -5.596 ; Rise       ; clk             ;
-;  lcd_data_in[31] ; clk        ; -4.642 ; -4.642 ; Rise       ; clk             ;
+; lcd_data_in[*]   ; clk        ; -2.946 ; -2.946 ; Rise       ; clk             ;
+;  lcd_data_in[0]  ; clk        ; -3.077 ; -3.077 ; Rise       ; clk             ;
+;  lcd_data_in[1]  ; clk        ; -3.553 ; -3.553 ; Rise       ; clk             ;
+;  lcd_data_in[2]  ; clk        ; -3.413 ; -3.413 ; Rise       ; clk             ;
+;  lcd_data_in[3]  ; clk        ; -3.586 ; -3.586 ; Rise       ; clk             ;
+;  lcd_data_in[4]  ; clk        ; -3.531 ; -3.531 ; Rise       ; clk             ;
+;  lcd_data_in[5]  ; clk        ; -3.287 ; -3.287 ; Rise       ; clk             ;
+;  lcd_data_in[6]  ; clk        ; -3.195 ; -3.195 ; Rise       ; clk             ;
+;  lcd_data_in[7]  ; clk        ; -3.333 ; -3.333 ; Rise       ; clk             ;
+;  lcd_data_in[8]  ; clk        ; -3.118 ; -3.118 ; Rise       ; clk             ;
+;  lcd_data_in[9]  ; clk        ; -3.065 ; -3.065 ; Rise       ; clk             ;
+;  lcd_data_in[10] ; clk        ; -3.703 ; -3.703 ; Rise       ; clk             ;
+;  lcd_data_in[11] ; clk        ; -3.837 ; -3.837 ; Rise       ; clk             ;
+;  lcd_data_in[12] ; clk        ; -3.845 ; -3.845 ; Rise       ; clk             ;
+;  lcd_data_in[13] ; clk        ; -3.531 ; -3.531 ; Rise       ; clk             ;
+;  lcd_data_in[14] ; clk        ; -3.804 ; -3.804 ; Rise       ; clk             ;
+;  lcd_data_in[15] ; clk        ; -3.817 ; -3.817 ; Rise       ; clk             ;
+;  lcd_data_in[16] ; clk        ; -3.788 ; -3.788 ; Rise       ; clk             ;
+;  lcd_data_in[17] ; clk        ; -3.355 ; -3.355 ; Rise       ; clk             ;
+;  lcd_data_in[18] ; clk        ; -3.580 ; -3.580 ; Rise       ; clk             ;
+;  lcd_data_in[19] ; clk        ; -3.576 ; -3.576 ; Rise       ; clk             ;
+;  lcd_data_in[20] ; clk        ; -3.172 ; -3.172 ; Rise       ; clk             ;
+;  lcd_data_in[21] ; clk        ; -3.221 ; -3.221 ; Rise       ; clk             ;
+;  lcd_data_in[22] ; clk        ; -3.450 ; -3.450 ; Rise       ; clk             ;
+;  lcd_data_in[23] ; clk        ; -3.538 ; -3.538 ; Rise       ; clk             ;
+;  lcd_data_in[24] ; clk        ; -2.946 ; -2.946 ; Rise       ; clk             ;
+;  lcd_data_in[25] ; clk        ; -3.077 ; -3.077 ; Rise       ; clk             ;
+;  lcd_data_in[26] ; clk        ; -3.153 ; -3.153 ; Rise       ; clk             ;
+;  lcd_data_in[27] ; clk        ; -3.341 ; -3.341 ; Rise       ; clk             ;
+;  lcd_data_in[28] ; clk        ; -3.834 ; -3.834 ; Rise       ; clk             ;
+;  lcd_data_in[29] ; clk        ; -3.094 ; -3.094 ; Rise       ; clk             ;
+;  lcd_data_in[30] ; clk        ; -3.693 ; -3.693 ; Rise       ; clk             ;
+;  lcd_data_in[31] ; clk        ; -3.553 ; -3.553 ; Rise       ; clk             ;
 +------------------+------------+--------+--------+------------+-----------------+
 
 
-+----------------------------------------------------------------------------+
-; Clock to Output Times                                                      ;
-+--------------+------------+--------+--------+------------+-----------------+
-; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+--------------+------------+--------+--------+------------+-----------------+
-; e            ; clk        ; 9.231  ; 9.231  ; Rise       ; clk             ;
-; lcd_data[*]  ; clk        ; 9.603  ; 9.603  ; Rise       ; clk             ;
-;  lcd_data[0] ; clk        ; 8.900  ; 8.900  ; Rise       ; clk             ;
-;  lcd_data[1] ; clk        ; 8.433  ; 8.433  ; Rise       ; clk             ;
-;  lcd_data[2] ; clk        ; 7.777  ; 7.777  ; Rise       ; clk             ;
-;  lcd_data[3] ; clk        ; 9.379  ; 9.379  ; Rise       ; clk             ;
-;  lcd_data[4] ; clk        ; 8.440  ; 8.440  ; Rise       ; clk             ;
-;  lcd_data[5] ; clk        ; 9.603  ; 9.603  ; Rise       ; clk             ;
-; rs           ; clk        ; 10.170 ; 10.170 ; Rise       ; clk             ;
-+--------------+------------+--------+--------+------------+-----------------+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; e            ; clk        ; 8.927 ; 8.927 ; Rise       ; clk             ;
+; lcd_data[*]  ; clk        ; 8.860 ; 8.860 ; Rise       ; clk             ;
+;  lcd_data[0] ; clk        ; 8.143 ; 8.143 ; Rise       ; clk             ;
+;  lcd_data[1] ; clk        ; 7.720 ; 7.720 ; Rise       ; clk             ;
+;  lcd_data[2] ; clk        ; 8.418 ; 8.418 ; Rise       ; clk             ;
+;  lcd_data[3] ; clk        ; 8.860 ; 8.860 ; Rise       ; clk             ;
+;  lcd_data[4] ; clk        ; 8.206 ; 8.206 ; Rise       ; clk             ;
+;  lcd_data[5] ; clk        ; 8.558 ; 8.558 ; Rise       ; clk             ;
+; rs           ; clk        ; 8.814 ; 8.814 ; Rise       ; clk             ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
-+----------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                              ;
-+--------------+------------+--------+--------+------------+-----------------+
-; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+--------------+------------+--------+--------+------------+-----------------+
-; e            ; clk        ; 9.231  ; 9.231  ; Rise       ; clk             ;
-; lcd_data[*]  ; clk        ; 7.777  ; 7.777  ; Rise       ; clk             ;
-;  lcd_data[0] ; clk        ; 8.900  ; 8.900  ; Rise       ; clk             ;
-;  lcd_data[1] ; clk        ; 8.433  ; 8.433  ; Rise       ; clk             ;
-;  lcd_data[2] ; clk        ; 7.777  ; 7.777  ; Rise       ; clk             ;
-;  lcd_data[3] ; clk        ; 9.379  ; 9.379  ; Rise       ; clk             ;
-;  lcd_data[4] ; clk        ; 8.440  ; 8.440  ; Rise       ; clk             ;
-;  lcd_data[5] ; clk        ; 9.603  ; 9.603  ; Rise       ; clk             ;
-; rs           ; clk        ; 10.170 ; 10.170 ; Rise       ; clk             ;
-+--------------+------------+--------+--------+------------+-----------------+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; e            ; clk        ; 8.927 ; 8.927 ; Rise       ; clk             ;
+; lcd_data[*]  ; clk        ; 7.720 ; 7.720 ; Rise       ; clk             ;
+;  lcd_data[0] ; clk        ; 8.143 ; 8.143 ; Rise       ; clk             ;
+;  lcd_data[1] ; clk        ; 7.720 ; 7.720 ; Rise       ; clk             ;
+;  lcd_data[2] ; clk        ; 8.418 ; 8.418 ; Rise       ; clk             ;
+;  lcd_data[3] ; clk        ; 8.860 ; 8.860 ; Rise       ; clk             ;
+;  lcd_data[4] ; clk        ; 8.206 ; 8.206 ; Rise       ; clk             ;
+;  lcd_data[5] ; clk        ; 8.558 ; 8.558 ; Rise       ; clk             ;
+; rs           ; clk        ; 8.814 ; 8.814 ; Rise       ; clk             ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
 +--------------------------------+
@@ -605,7 +605,7 @@ No paths to report.
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; 15.215 ; 0.000         ;
+; clk   ; 15.376 ; 0.000         ;
 +-------+--------+---------------+
 
 
@@ -644,106 +644,106 @@ No paths to report.
 +--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                              ; To Node                                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
-; 15.215 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.013     ; 4.804      ;
-; 15.285 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[2]  ; clk          ; clk         ; 20.000       ; 0.005      ; 4.752      ;
-; 15.288 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[3]  ; clk          ; clk         ; 20.000       ; 0.005      ; 4.749      ;
-; 15.289 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.005      ; 4.748      ;
-; 15.290 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.005      ; 4.747      ;
-; 15.291 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[16] ; clk          ; clk         ; 20.000       ; 0.005      ; 4.746      ;
-; 15.291 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[15] ; clk          ; clk         ; 20.000       ; 0.005      ; 4.746      ;
-; 15.291 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.005      ; 4.746      ;
-; 15.292 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[14] ; clk          ; clk         ; 20.000       ; 0.005      ; 4.745      ;
-; 15.376 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.018     ; 4.638      ;
-; 15.399 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.003     ; 4.630      ;
-; 15.401 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.018     ; 4.613      ;
-; 15.408 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; 0.002      ; 4.626      ;
-; 15.411 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; 0.002      ; 4.623      ;
-; 15.411 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[21] ; clk          ; clk         ; 20.000       ; 0.002      ; 4.623      ;
-; 15.412 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[18] ; clk          ; clk         ; 20.000       ; 0.002      ; 4.622      ;
-; 15.413 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.003      ; 4.622      ;
-; 15.415 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; 0.002      ; 4.619      ;
-; 15.416 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[20] ; clk          ; clk         ; 20.000       ; 0.002      ; 4.618      ;
-; 15.417 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; 0.003      ; 4.618      ;
-; 15.418 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[0]   ; clk          ; clk         ; 20.000       ; -0.013     ; 4.601      ;
-; 15.418 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[1]   ; clk          ; clk         ; 20.000       ; -0.013     ; 4.601      ;
-; 15.418 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[3]   ; clk          ; clk         ; 20.000       ; -0.013     ; 4.601      ;
-; 15.418 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[4]   ; clk          ; clk         ; 20.000       ; -0.013     ; 4.601      ;
-; 15.418 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[5]   ; clk          ; clk         ; 20.000       ; -0.013     ; 4.601      ;
-; 15.419 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[19] ; clk          ; clk         ; 20.000       ; 0.002      ; 4.615      ;
-; 15.421 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.003      ; 4.614      ;
-; 15.432 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.018     ; 4.582      ;
-; 15.446 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[2]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.586      ;
-; 15.449 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[3]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.583      ;
-; 15.450 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.582      ;
-; 15.451 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.581      ;
-; 15.452 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[16] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.580      ;
-; 15.452 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[15] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.580      ;
-; 15.452 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.580      ;
-; 15.453 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[14] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.579      ;
-; 15.469 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.018     ; 4.545      ;
-; 15.471 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[2]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.561      ;
-; 15.474 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[3]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.558      ;
-; 15.475 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.557      ;
-; 15.476 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.556      ;
-; 15.477 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[16] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.555      ;
-; 15.477 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[15] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.555      ;
-; 15.477 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.555      ;
-; 15.478 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[14] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.554      ;
-; 15.484 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; 0.003      ; 4.551      ;
-; 15.502 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[2]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.530      ;
-; 15.505 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[3]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.527      ;
-; 15.506 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.526      ;
-; 15.507 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.525      ;
-; 15.508 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[16] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.524      ;
-; 15.508 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[15] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.524      ;
-; 15.508 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.524      ;
-; 15.509 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.018     ; 4.505      ;
-; 15.509 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[14] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.523      ;
-; 15.537 ; lcd_controller:LCD_contr|clk_count[6]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.016     ; 4.479      ;
-; 15.539 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[2]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.493      ;
-; 15.542 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[3]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.490      ;
-; 15.543 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.489      ;
-; 15.544 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.488      ;
-; 15.545 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[16] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.487      ;
-; 15.545 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[15] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.487      ;
-; 15.545 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.487      ;
-; 15.546 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[14] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.486      ;
-; 15.559 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.015     ; 4.458      ;
-; 15.560 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.008     ; 4.464      ;
-; 15.569 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.003     ; 4.460      ;
-; 15.572 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.016     ; 4.444      ;
-; 15.572 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.003     ; 4.457      ;
-; 15.572 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[21] ; clk          ; clk         ; 20.000       ; -0.003     ; 4.457      ;
-; 15.573 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[18] ; clk          ; clk         ; 20.000       ; -0.003     ; 4.456      ;
-; 15.574 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; -0.002     ; 4.456      ;
-; 15.576 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.003     ; 4.453      ;
-; 15.577 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[20] ; clk          ; clk         ; 20.000       ; -0.003     ; 4.452      ;
-; 15.578 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.002     ; 4.452      ;
-; 15.579 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[2]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.453      ;
-; 15.579 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|lcd_data[0]   ; clk          ; clk         ; 20.000       ; -0.018     ; 4.435      ;
-; 15.579 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|lcd_data[1]   ; clk          ; clk         ; 20.000       ; -0.018     ; 4.435      ;
-; 15.579 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|lcd_data[3]   ; clk          ; clk         ; 20.000       ; -0.018     ; 4.435      ;
-; 15.579 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|lcd_data[4]   ; clk          ; clk         ; 20.000       ; -0.018     ; 4.435      ;
-; 15.579 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|lcd_data[5]   ; clk          ; clk         ; 20.000       ; -0.018     ; 4.435      ;
-; 15.580 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[19] ; clk          ; clk         ; 20.000       ; -0.003     ; 4.449      ;
-; 15.582 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[3]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.450      ;
-; 15.582 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; -0.002     ; 4.448      ;
-; 15.583 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.449      ;
-; 15.584 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[26] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.448      ;
-; 15.584 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[27] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.448      ;
-; 15.584 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[10] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.448      ;
-; 15.584 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.448      ;
-; 15.585 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[16] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.447      ;
-; 15.585 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[15] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.447      ;
-; 15.585 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.447      ;
-; 15.585 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.008     ; 4.439      ;
-; 15.586 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[14] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.446      ;
-; 15.587 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[30] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.445      ;
-; 15.587 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[25] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.445      ;
-; 15.591 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[28] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.441      ;
-; 15.592 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[22] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.440      ;
-; 15.593 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[0]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.439      ;
-; 15.594 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[29] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.438      ;
+; 15.376 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.645      ;
+; 15.419 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.602      ;
+; 15.440 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.581      ;
+; 15.445 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.576      ;
+; 15.447 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.009     ; 4.576      ;
+; 15.475 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.546      ;
+; 15.490 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.009     ; 4.533      ;
+; 15.511 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.009     ; 4.512      ;
+; 15.513 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.508      ;
+; 15.516 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.009     ; 4.507      ;
+; 15.520 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.007     ; 4.505      ;
+; 15.546 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.486      ;
+; 15.546 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.486      ;
+; 15.546 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.486      ;
+; 15.546 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.009     ; 4.477      ;
+; 15.550 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.482      ;
+; 15.551 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.481      ;
+; 15.553 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.479      ;
+; 15.558 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.470      ;
+; 15.558 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.470      ;
+; 15.559 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.469      ;
+; 15.562 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.466      ;
+; 15.563 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.465      ;
+; 15.577 ; lcd_controller:LCD_contr|clk_count[8]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.007     ; 4.448      ;
+; 15.581 ; lcd_controller:LCD_contr|clk_count[6]  ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.440      ;
+; 15.584 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.009     ; 4.439      ;
+; 15.589 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.443      ;
+; 15.589 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.443      ;
+; 15.589 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.443      ;
+; 15.591 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.005     ; 4.436      ;
+; 15.593 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.439      ;
+; 15.594 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.438      ;
+; 15.596 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.436      ;
+; 15.601 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.427      ;
+; 15.601 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.427      ;
+; 15.602 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.426      ;
+; 15.605 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.423      ;
+; 15.606 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.422      ;
+; 15.610 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.422      ;
+; 15.610 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.422      ;
+; 15.610 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.422      ;
+; 15.612 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[1]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.409      ;
+; 15.614 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.418      ;
+; 15.615 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.417      ;
+; 15.615 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.417      ;
+; 15.615 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.417      ;
+; 15.615 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.417      ;
+; 15.617 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.415      ;
+; 15.619 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.413      ;
+; 15.620 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.412      ;
+; 15.622 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.410      ;
+; 15.622 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.406      ;
+; 15.622 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.406      ;
+; 15.623 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.007     ; 4.402      ;
+; 15.623 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.405      ;
+; 15.626 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.402      ;
+; 15.627 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.401      ;
+; 15.627 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.401      ;
+; 15.627 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.401      ;
+; 15.628 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.400      ;
+; 15.631 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.397      ;
+; 15.632 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.396      ;
+; 15.645 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.387      ;
+; 15.645 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.387      ;
+; 15.645 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.387      ;
+; 15.648 ; lcd_controller:LCD_contr|clk_count[8]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.005     ; 4.379      ;
+; 15.649 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.383      ;
+; 15.650 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.382      ;
+; 15.652 ; lcd_controller:LCD_contr|clk_count[6]  ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.009     ; 4.371      ;
+; 15.652 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.380      ;
+; 15.655 ; lcd_controller:LCD_contr|clk_count[1]  ; lcd_controller:LCD_contr|lcd_data[1]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.366      ;
+; 15.657 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.371      ;
+; 15.657 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.371      ;
+; 15.658 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[8]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.370      ;
+; 15.660 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[5]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.361      ;
+; 15.660 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[0]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.361      ;
+; 15.660 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[3]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.361      ;
+; 15.660 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|lcd_data[4]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.361      ;
+; 15.661 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[12] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.367      ;
+; 15.662 ; lcd_controller:LCD_contr|clk_count[10] ; lcd_controller:LCD_contr|lcd_data[2]   ; clk          ; clk         ; 20.000       ; -0.006     ; 4.364      ;
+; 15.662 ; lcd_controller:LCD_contr|clk_count[3]  ; lcd_controller:LCD_contr|clk_count[17] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.366      ;
+; 15.668 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[0]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.364      ;
+; 15.672 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[2]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.360      ;
+; 15.674 ; lcd_controller:LCD_contr|clk_count[0]  ; lcd_controller:LCD_contr|clk_count[3]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.358      ;
+; 15.676 ; lcd_controller:LCD_contr|clk_count[5]  ; lcd_controller:LCD_contr|lcd_data[1]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.345      ;
+; 15.681 ; lcd_controller:LCD_contr|clk_count[2]  ; lcd_controller:LCD_contr|lcd_data[1]   ; clk          ; clk         ; 20.000       ; -0.011     ; 4.340      ;
+; 15.683 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.000      ; 4.349      ;
+; 15.683 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.349      ;
+; 15.683 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.349      ;
+; 15.687 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.345      ;
+; 15.688 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.344      ;
+; 15.690 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[11] ; clk          ; clk         ; 20.000       ; 0.004      ; 4.346      ;
+; 15.690 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[6]  ; clk          ; clk         ; 20.000       ; 0.004      ; 4.346      ;
+; 15.690 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[5]  ; clk          ; clk         ; 20.000       ; 0.004      ; 4.346      ;
+; 15.690 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[4]  ; clk          ; clk         ; 20.000       ; 0.000      ; 4.342      ;
+; 15.694 ; lcd_controller:LCD_contr|clk_count[12] ; lcd_controller:LCD_contr|e             ; clk          ; clk         ; 20.000       ; -0.005     ; 4.333      ;
+; 15.694 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[1]  ; clk          ; clk         ; 20.000       ; 0.004      ; 4.342      ;
+; 15.695 ; lcd_controller:LCD_contr|clk_count[7]  ; lcd_controller:LCD_contr|clk_count[9]  ; clk          ; clk         ; 20.000       ; 0.004      ; 4.341      ;
+; 15.695 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[7]  ; clk          ; clk         ; 20.000       ; -0.004     ; 4.333      ;
+; 15.695 ; lcd_controller:LCD_contr|clk_count[4]  ; lcd_controller:LCD_contr|clk_count[13] ; clk          ; clk         ; 20.000       ; -0.004     ; 4.333      ;
 +--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -753,59 +753,82 @@ No paths to report.
 ; Slack ; From Node                                    ; To Node                                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------------------------------+----------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; 0.215 ; lcd_controller:LCD_contr|state.power_up      ; lcd_controller:LCD_contr|state.power_up      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; lcd_controller:LCD_contr|state.initialize    ; lcd_controller:LCD_contr|state.initialize    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ControllerTest_TOP:LCD_user|global_count2[0] ; ControllerTest_TOP:LCD_user|global_count2[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; ControllerTest_TOP:LCD_user|send_flag[0]     ; ControllerTest_TOP:LCD_user|send_flag[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; ControllerTest_TOP:LCD_user|bindec[8]        ; ControllerTest_TOP:LCD_user|bindec[8]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; ControllerTest_TOP:LCD_user|bindec[9]        ; ControllerTest_TOP:LCD_user|bindec[9]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; ControllerTest_TOP:LCD_user|bindec[7]        ; ControllerTest_TOP:LCD_user|bindec[7]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; ControllerTest_TOP:LCD_user|bindec[6]        ; ControllerTest_TOP:LCD_user|bindec[6]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ControllerTest_TOP:LCD_user|bindec[5]        ; ControllerTest_TOP:LCD_user|bindec[5]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ControllerTest_TOP:LCD_user|bindec[4]        ; ControllerTest_TOP:LCD_user|bindec[4]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ControllerTest_TOP:LCD_user|bindec[7]        ; ControllerTest_TOP:LCD_user|bindec[7]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ControllerTest_TOP:LCD_user|bindec[9]        ; ControllerTest_TOP:LCD_user|bindec[9]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ControllerTest_TOP:LCD_user|bindec[8]        ; ControllerTest_TOP:LCD_user|bindec[8]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; ControllerTest_TOP:LCD_user|flag_zero[0]     ; ControllerTest_TOP:LCD_user|flag_zero[0]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ControllerTest_TOP:LCD_user|global_count[0]  ; ControllerTest_TOP:LCD_user|global_count[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; ControllerTest_TOP:LCD_user|bindec[3]        ; ControllerTest_TOP:LCD_user|bindec[3]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; ControllerTest_TOP:LCD_user|bindec[2]        ; ControllerTest_TOP:LCD_user|bindec[2]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; lcd_controller:LCD_contr|state.send          ; lcd_controller:LCD_contr|state.send          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; lcd_controller:LCD_contr|state.initialize    ; lcd_controller:LCD_contr|state.initialize    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; lcd_controller:LCD_contr|rs                  ; lcd_controller:LCD_contr|rs                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; ControllerTest_TOP:LCD_user|bindec[0]        ; ControllerTest_TOP:LCD_user|bindec[0]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; ControllerTest_TOP:LCD_user|bindec[1]        ; ControllerTest_TOP:LCD_user|bindec[1]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; ControllerTest_TOP:LCD_user|bindec[0]        ; ControllerTest_TOP:LCD_user|bindec[0]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; ControllerTest_TOP:LCD_user|lcd_bus[1]       ; ControllerTest_TOP:LCD_user|lcd_bus[1]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.238 ; ControllerTest_TOP:LCD_user|div_freq_lcd[30] ; ControllerTest_TOP:LCD_user|div_freq_lcd[30] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.390      ;
-; 0.240 ; ControllerTest_TOP:LCD_user|first_number     ; ControllerTest_TOP:LCD_user|lcd_bus[1]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.392      ;
-; 0.243 ; ControllerTest_TOP:LCD_user|char[4]          ; ControllerTest_TOP:LCD_user|char[4]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.395      ;
+; 0.237 ; ControllerTest_TOP:LCD_user|global_count2[0] ; ControllerTest_TOP:LCD_user|global_count[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.389      ;
+; 0.243 ; ControllerTest_TOP:LCD_user|l[31]            ; ControllerTest_TOP:LCD_user|l[31]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.395      ;
 ; 0.243 ; ControllerTest_TOP:LCD_user|k[31]            ; ControllerTest_TOP:LCD_user|k[31]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.395      ;
-; 0.250 ; lcd_controller:LCD_contr|state.initialize    ; lcd_controller:LCD_contr|busy                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.402      ;
-; 0.257 ; ControllerTest_TOP:LCD_user|send_flag[0]     ; ControllerTest_TOP:LCD_user|bindec[0]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.409      ;
-; 0.264 ; ControllerTest_TOP:LCD_user|cnt[4]           ; ControllerTest_TOP:LCD_user|cnt[4]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.416      ;
-; 0.355 ; ControllerTest_TOP:LCD_user|j[16]            ; ControllerTest_TOP:LCD_user|j[16]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
-; 0.355 ; ControllerTest_TOP:LCD_user|j[17]            ; ControllerTest_TOP:LCD_user|j[17]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
+; 0.247 ; ControllerTest_TOP:LCD_user|char[4]          ; ControllerTest_TOP:LCD_user|char[4]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.399      ;
+; 0.261 ; ControllerTest_TOP:LCD_user|cnt[4]           ; ControllerTest_TOP:LCD_user|cnt[4]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.413      ;
+; 0.299 ; lcd_controller:LCD_contr|state.send          ; lcd_controller:LCD_contr|state.ready         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.451      ;
+; 0.301 ; lcd_controller:LCD_contr|state.initialize    ; lcd_controller:LCD_contr|clk_count[31]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.453      ;
+; 0.348 ; ControllerTest_TOP:LCD_user|send_flag[0]     ; ControllerTest_TOP:LCD_user|bindec[2]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.500      ;
+; 0.350 ; ControllerTest_TOP:LCD_user|send_flag[0]     ; ControllerTest_TOP:LCD_user|bindec[3]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.502      ;
+; 0.355 ; ControllerTest_TOP:LCD_user|l[0]             ; ControllerTest_TOP:LCD_user|l[0]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
+; 0.355 ; ControllerTest_TOP:LCD_user|l[16]            ; ControllerTest_TOP:LCD_user|l[16]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
+; 0.355 ; ControllerTest_TOP:LCD_user|div_freq_lcd[16] ; ControllerTest_TOP:LCD_user|div_freq_lcd[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
 ; 0.355 ; ControllerTest_TOP:LCD_user|j[1]             ; ControllerTest_TOP:LCD_user|j[1]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
+; 0.355 ; ControllerTest_TOP:LCD_user|j[0]             ; ControllerTest_TOP:LCD_user|j[0]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
 ; 0.355 ; ControllerTest_TOP:LCD_user|k[0]             ; ControllerTest_TOP:LCD_user|k[0]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
 ; 0.355 ; ControllerTest_TOP:LCD_user|k[16]            ; ControllerTest_TOP:LCD_user|k[16]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
-; 0.356 ; ControllerTest_TOP:LCD_user|char[2]          ; ControllerTest_TOP:LCD_user|char[2]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.508      ;
-; 0.357 ; ControllerTest_TOP:LCD_user|j[0]             ; ControllerTest_TOP:LCD_user|j[0]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.509      ;
-; 0.357 ; ControllerTest_TOP:LCD_user|j[31]            ; ControllerTest_TOP:LCD_user|j[31]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.509      ;
-; 0.358 ; ControllerTest_TOP:LCD_user|div_freq_lcd[9]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
-; 0.358 ; ControllerTest_TOP:LCD_user|div_freq_lcd[11] ; ControllerTest_TOP:LCD_user|div_freq_lcd[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
-; 0.358 ; ControllerTest_TOP:LCD_user|div_freq_lcd[18] ; ControllerTest_TOP:LCD_user|div_freq_lcd[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
-; 0.358 ; ControllerTest_TOP:LCD_user|div_freq_lcd[20] ; ControllerTest_TOP:LCD_user|div_freq_lcd[20] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.356 ; ControllerTest_TOP:LCD_user|div_freq_lcd[18] ; ControllerTest_TOP:LCD_user|div_freq_lcd[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.508      ;
+; 0.357 ; ControllerTest_TOP:LCD_user|div_freq_lcd[30] ; ControllerTest_TOP:LCD_user|div_freq_lcd[30] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.509      ;
+; 0.358 ; ControllerTest_TOP:LCD_user|char[0]          ; ControllerTest_TOP:LCD_user|char[0]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.358 ; ControllerTest_TOP:LCD_user|l[4]             ; ControllerTest_TOP:LCD_user|l[4]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.358 ; ControllerTest_TOP:LCD_user|l[7]             ; ControllerTest_TOP:LCD_user|l[7]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.358 ; ControllerTest_TOP:LCD_user|j[25]            ; ControllerTest_TOP:LCD_user|j[25]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.358 ; ControllerTest_TOP:LCD_user|j[27]            ; ControllerTest_TOP:LCD_user|j[27]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
 ; 0.358 ; ControllerTest_TOP:LCD_user|k[4]             ; ControllerTest_TOP:LCD_user|k[4]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
 ; 0.358 ; ControllerTest_TOP:LCD_user|k[7]             ; ControllerTest_TOP:LCD_user|k[7]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
-; 0.359 ; ControllerTest_TOP:LCD_user|char[0]          ; ControllerTest_TOP:LCD_user|char[0]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
+; 0.359 ; ControllerTest_TOP:LCD_user|l[1]             ; ControllerTest_TOP:LCD_user|l[1]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
+; 0.359 ; ControllerTest_TOP:LCD_user|l[17]            ; ControllerTest_TOP:LCD_user|l[17]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
 ; 0.359 ; ControllerTest_TOP:LCD_user|div_freq_lcd[17] ; ControllerTest_TOP:LCD_user|div_freq_lcd[17] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
 ; 0.359 ; ControllerTest_TOP:LCD_user|k[1]             ; ControllerTest_TOP:LCD_user|k[1]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
 ; 0.359 ; ControllerTest_TOP:LCD_user|k[17]            ; ControllerTest_TOP:LCD_user|k[17]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
-; 0.360 ; ControllerTest_TOP:LCD_user|j[18]            ; ControllerTest_TOP:LCD_user|j[18]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; ControllerTest_TOP:LCD_user|l[9]             ; ControllerTest_TOP:LCD_user|l[9]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; ControllerTest_TOP:LCD_user|l[11]            ; ControllerTest_TOP:LCD_user|l[11]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; ControllerTest_TOP:LCD_user|l[18]            ; ControllerTest_TOP:LCD_user|l[18]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; ControllerTest_TOP:LCD_user|l[25]            ; ControllerTest_TOP:LCD_user|l[25]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; ControllerTest_TOP:LCD_user|l[27]            ; ControllerTest_TOP:LCD_user|l[27]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; ControllerTest_TOP:LCD_user|div_freq_lcd[2]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
 ; 0.360 ; ControllerTest_TOP:LCD_user|j[2]             ; ControllerTest_TOP:LCD_user|j[2]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
 ; 0.360 ; ControllerTest_TOP:LCD_user|k[9]             ; ControllerTest_TOP:LCD_user|k[9]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
 ; 0.360 ; ControllerTest_TOP:LCD_user|k[11]            ; ControllerTest_TOP:LCD_user|k[11]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
 ; 0.360 ; ControllerTest_TOP:LCD_user|k[18]            ; ControllerTest_TOP:LCD_user|k[18]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
 ; 0.360 ; ControllerTest_TOP:LCD_user|k[25]            ; ControllerTest_TOP:LCD_user|k[25]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
 ; 0.360 ; ControllerTest_TOP:LCD_user|k[27]            ; ControllerTest_TOP:LCD_user|k[27]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
-; 0.361 ; ControllerTest_TOP:LCD_user|div_freq_lcd[13] ; ControllerTest_TOP:LCD_user|div_freq_lcd[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
-; 0.361 ; ControllerTest_TOP:LCD_user|div_freq_lcd[14] ; ControllerTest_TOP:LCD_user|div_freq_lcd[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
-; 0.361 ; ControllerTest_TOP:LCD_user|div_freq_lcd[15] ; ControllerTest_TOP:LCD_user|div_freq_lcd[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
-; 0.361 ; ControllerTest_TOP:LCD_user|j[23]            ; ControllerTest_TOP:LCD_user|j[23]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
-; 0.361 ; ControllerTest_TOP:LCD_user|j[7]             ; ControllerTest_TOP:LCD_user|j[7]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|char[2]          ; ControllerTest_TOP:LCD_user|char[2]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|char[3]          ; ControllerTest_TOP:LCD_user|char[3]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|l[13]            ; ControllerTest_TOP:LCD_user|l[13]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|l[14]            ; ControllerTest_TOP:LCD_user|l[14]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|l[15]            ; ControllerTest_TOP:LCD_user|l[15]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|l[20]            ; ControllerTest_TOP:LCD_user|l[20]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|l[23]            ; ControllerTest_TOP:LCD_user|l[23]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|l[29]            ; ControllerTest_TOP:LCD_user|l[29]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|l[30]            ; ControllerTest_TOP:LCD_user|l[30]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|div_freq_lcd[4]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|div_freq_lcd[7]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[7]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
 ; 0.361 ; ControllerTest_TOP:LCD_user|j[4]             ; ControllerTest_TOP:LCD_user|j[4]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
-; 0.361 ; ControllerTest_TOP:LCD_user|j[20]            ; ControllerTest_TOP:LCD_user|j[20]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|j[7]             ; ControllerTest_TOP:LCD_user|j[7]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|j[29]            ; ControllerTest_TOP:LCD_user|j[29]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|j[30]            ; ControllerTest_TOP:LCD_user|j[30]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|j[31]            ; ControllerTest_TOP:LCD_user|j[31]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
 ; 0.361 ; ControllerTest_TOP:LCD_user|k[13]            ; ControllerTest_TOP:LCD_user|k[13]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
 ; 0.361 ; ControllerTest_TOP:LCD_user|k[14]            ; ControllerTest_TOP:LCD_user|k[14]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
 ; 0.361 ; ControllerTest_TOP:LCD_user|k[15]            ; ControllerTest_TOP:LCD_user|k[15]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
@@ -813,45 +836,22 @@ No paths to report.
 ; 0.361 ; ControllerTest_TOP:LCD_user|k[23]            ; ControllerTest_TOP:LCD_user|k[23]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
 ; 0.361 ; ControllerTest_TOP:LCD_user|k[29]            ; ControllerTest_TOP:LCD_user|k[29]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
 ; 0.361 ; ControllerTest_TOP:LCD_user|k[30]            ; ControllerTest_TOP:LCD_user|k[30]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
-; 0.366 ; ControllerTest_TOP:LCD_user|div_freq_lcd[8]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[8]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.518      ;
-; 0.366 ; lcd_controller:LCD_contr|state.initialize    ; lcd_controller:LCD_contr|clk_count[31]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.518      ;
-; 0.367 ; ControllerTest_TOP:LCD_user|div_freq_lcd[21] ; ControllerTest_TOP:LCD_user|div_freq_lcd[21] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
-; 0.369 ; ControllerTest_TOP:LCD_user|char[1]          ; ControllerTest_TOP:LCD_user|char[1]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.521      ;
-; 0.370 ; ControllerTest_TOP:LCD_user|char[3]          ; ControllerTest_TOP:LCD_user|char[3]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.522      ;
-; 0.371 ; ControllerTest_TOP:LCD_user|div_freq_lcd[3]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
-; 0.371 ; ControllerTest_TOP:LCD_user|div_freq_lcd[16] ; ControllerTest_TOP:LCD_user|div_freq_lcd[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
-; 0.371 ; ControllerTest_TOP:LCD_user|j[26]            ; ControllerTest_TOP:LCD_user|j[26]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
-; 0.371 ; ControllerTest_TOP:LCD_user|j[24]            ; ControllerTest_TOP:LCD_user|j[24]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
-; 0.371 ; ControllerTest_TOP:LCD_user|j[10]            ; ControllerTest_TOP:LCD_user|j[10]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.361 ; ControllerTest_TOP:LCD_user|char[4]          ; ControllerTest_TOP:LCD_user|lcd_enable       ; clk          ; clk         ; 0.000        ; 0.002      ; 0.515      ;
+; 0.365 ; ControllerTest_TOP:LCD_user|char[1]          ; ControllerTest_TOP:LCD_user|char[1]          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; ControllerTest_TOP:LCD_user|send_flag[0]     ; ControllerTest_TOP:LCD_user|bindec[0]        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.371 ; ControllerTest_TOP:LCD_user|l[3]             ; ControllerTest_TOP:LCD_user|l[3]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; ControllerTest_TOP:LCD_user|l[8]             ; ControllerTest_TOP:LCD_user|l[8]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; ControllerTest_TOP:LCD_user|l[10]            ; ControllerTest_TOP:LCD_user|l[10]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; ControllerTest_TOP:LCD_user|l[19]            ; ControllerTest_TOP:LCD_user|l[19]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; ControllerTest_TOP:LCD_user|l[24]            ; ControllerTest_TOP:LCD_user|l[24]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; ControllerTest_TOP:LCD_user|l[26]            ; ControllerTest_TOP:LCD_user|l[26]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; ControllerTest_TOP:LCD_user|div_freq_lcd[10] ; ControllerTest_TOP:LCD_user|div_freq_lcd[10] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
 ; 0.371 ; ControllerTest_TOP:LCD_user|j[8]             ; ControllerTest_TOP:LCD_user|j[8]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; ControllerTest_TOP:LCD_user|j[10]            ; ControllerTest_TOP:LCD_user|j[10]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; ControllerTest_TOP:LCD_user|j[19]            ; ControllerTest_TOP:LCD_user|j[19]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
 ; 0.371 ; ControllerTest_TOP:LCD_user|k[3]             ; ControllerTest_TOP:LCD_user|k[3]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
 ; 0.371 ; ControllerTest_TOP:LCD_user|k[8]             ; ControllerTest_TOP:LCD_user|k[8]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
 ; 0.371 ; ControllerTest_TOP:LCD_user|k[10]            ; ControllerTest_TOP:LCD_user|k[10]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
-; 0.371 ; ControllerTest_TOP:LCD_user|k[19]            ; ControllerTest_TOP:LCD_user|k[19]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
-; 0.371 ; ControllerTest_TOP:LCD_user|k[24]            ; ControllerTest_TOP:LCD_user|k[24]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
-; 0.371 ; ControllerTest_TOP:LCD_user|k[26]            ; ControllerTest_TOP:LCD_user|k[26]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
-; 0.371 ; lcd_controller:LCD_contr|state.send          ; lcd_controller:LCD_contr|state.ready         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
-; 0.372 ; ControllerTest_TOP:LCD_user|div_freq_lcd[5]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.372 ; ControllerTest_TOP:LCD_user|div_freq_lcd[6]  ; ControllerTest_TOP:LCD_user|div_freq_lcd[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.372 ; ControllerTest_TOP:LCD_user|j[12]            ; ControllerTest_TOP:LCD_user|j[12]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.372 ; ControllerTest_TOP:LCD_user|j[28]            ; ControllerTest_TOP:LCD_user|j[28]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.372 ; ControllerTest_TOP:LCD_user|k[5]             ; ControllerTest_TOP:LCD_user|k[5]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.372 ; ControllerTest_TOP:LCD_user|k[6]             ; ControllerTest_TOP:LCD_user|k[6]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.372 ; ControllerTest_TOP:LCD_user|k[12]            ; ControllerTest_TOP:LCD_user|k[12]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.372 ; ControllerTest_TOP:LCD_user|k[21]            ; ControllerTest_TOP:LCD_user|k[21]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.372 ; ControllerTest_TOP:LCD_user|k[22]            ; ControllerTest_TOP:LCD_user|k[22]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.372 ; ControllerTest_TOP:LCD_user|k[28]            ; ControllerTest_TOP:LCD_user|k[28]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
-; 0.374 ; ControllerTest_TOP:LCD_user|div_freq_lcd[26] ; ControllerTest_TOP:LCD_user|div_freq_lcd[26] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.526      ;
-; 0.374 ; ControllerTest_TOP:LCD_user|div_freq_lcd[28] ; ControllerTest_TOP:LCD_user|div_freq_lcd[28] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.526      ;
-; 0.383 ; ControllerTest_TOP:LCD_user|lcd_enable       ; lcd_controller:LCD_contr|state.send          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.535      ;
-; 0.391 ; lcd_controller:LCD_contr|state.ready         ; lcd_controller:LCD_contr|state.send          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.543      ;
-; 0.394 ; ControllerTest_TOP:LCD_user|cnt[3]           ; ControllerTest_TOP:LCD_user|cnt[3]           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.546      ;
-; 0.402 ; ControllerTest_TOP:LCD_user|lcd_enable       ; lcd_controller:LCD_contr|lcd_data[5]         ; clk          ; clk         ; 0.000        ; 0.002      ; 0.556      ;
-; 0.403 ; ControllerTest_TOP:LCD_user|lcd_enable       ; lcd_controller:LCD_contr|lcd_data[1]         ; clk          ; clk         ; 0.000        ; 0.002      ; 0.557      ;
-; 0.403 ; ControllerTest_TOP:LCD_user|lcd_enable       ; lcd_controller:LCD_contr|lcd_data[4]         ; clk          ; clk         ; 0.000        ; 0.002      ; 0.557      ;
-; 0.406 ; lcd_controller:LCD_contr|e                   ; lcd_controller:LCD_contr|e                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.558      ;
-; 0.431 ; ControllerTest_TOP:LCD_user|lcd_enable       ; ControllerTest_TOP:LCD_user|lcd_enable       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.583      ;
-; 0.439 ; ControllerTest_TOP:LCD_user|j[22]            ; ControllerTest_TOP:LCD_user|j[22]            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.591      ;
 +-------+----------------------------------------------+----------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -880,6 +880,8 @@ No paths to report.
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|bindec[8]        ;
 ; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|bindec[9]        ;
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|bindec[9]        ;
+; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|change           ;
+; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|change           ;
 ; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|char[0]          ;
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|char[0]          ;
 ; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|char[1]          ;
@@ -956,8 +958,6 @@ No paths to report.
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|div_freq_lcd[8]  ;
 ; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|div_freq_lcd[9]  ;
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|div_freq_lcd[9]  ;
-; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|first_number     ;
-; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|first_number     ;
 ; 9.000 ; 10.000       ; 1.000          ; High Pulse Width ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|flag_zero[0]     ;
 ; 9.000 ; 10.000       ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; ControllerTest_TOP:LCD_user|flag_zero[0]     ;
 +-------+--------------+----------------+------------------+-------+------------+----------------------------------------------+
@@ -968,39 +968,39 @@ No paths to report.
 +------------------+------------+-------+-------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------------+------------+-------+-------+------------+-----------------+
-; lcd_data_in[*]   ; clk        ; 5.761 ; 5.761 ; Rise       ; clk             ;
-;  lcd_data_in[0]  ; clk        ; 3.559 ; 3.559 ; Rise       ; clk             ;
-;  lcd_data_in[1]  ; clk        ; 3.865 ; 3.865 ; Rise       ; clk             ;
-;  lcd_data_in[2]  ; clk        ; 4.796 ; 4.796 ; Rise       ; clk             ;
-;  lcd_data_in[3]  ; clk        ; 5.044 ; 5.044 ; Rise       ; clk             ;
-;  lcd_data_in[4]  ; clk        ; 5.761 ; 5.761 ; Rise       ; clk             ;
-;  lcd_data_in[5]  ; clk        ; 5.636 ; 5.636 ; Rise       ; clk             ;
-;  lcd_data_in[6]  ; clk        ; 5.438 ; 5.438 ; Rise       ; clk             ;
-;  lcd_data_in[7]  ; clk        ; 5.529 ; 5.529 ; Rise       ; clk             ;
-;  lcd_data_in[8]  ; clk        ; 3.387 ; 3.387 ; Rise       ; clk             ;
-;  lcd_data_in[9]  ; clk        ; 3.917 ; 3.917 ; Rise       ; clk             ;
-;  lcd_data_in[10] ; clk        ; 4.680 ; 4.680 ; Rise       ; clk             ;
-;  lcd_data_in[11] ; clk        ; 4.867 ; 4.867 ; Rise       ; clk             ;
-;  lcd_data_in[12] ; clk        ; 5.556 ; 5.556 ; Rise       ; clk             ;
-;  lcd_data_in[13] ; clk        ; 5.467 ; 5.467 ; Rise       ; clk             ;
-;  lcd_data_in[14] ; clk        ; 5.281 ; 5.281 ; Rise       ; clk             ;
-;  lcd_data_in[15] ; clk        ; 5.510 ; 5.510 ; Rise       ; clk             ;
-;  lcd_data_in[16] ; clk        ; 3.712 ; 3.712 ; Rise       ; clk             ;
-;  lcd_data_in[17] ; clk        ; 3.616 ; 3.616 ; Rise       ; clk             ;
-;  lcd_data_in[18] ; clk        ; 4.505 ; 4.505 ; Rise       ; clk             ;
-;  lcd_data_in[19] ; clk        ; 5.053 ; 5.053 ; Rise       ; clk             ;
-;  lcd_data_in[20] ; clk        ; 5.509 ; 5.509 ; Rise       ; clk             ;
-;  lcd_data_in[21] ; clk        ; 5.355 ; 5.355 ; Rise       ; clk             ;
-;  lcd_data_in[22] ; clk        ; 5.648 ; 5.648 ; Rise       ; clk             ;
-;  lcd_data_in[23] ; clk        ; 5.565 ; 5.565 ; Rise       ; clk             ;
-;  lcd_data_in[24] ; clk        ; 3.511 ; 3.511 ; Rise       ; clk             ;
-;  lcd_data_in[25] ; clk        ; 3.657 ; 3.657 ; Rise       ; clk             ;
-;  lcd_data_in[26] ; clk        ; 4.446 ; 4.446 ; Rise       ; clk             ;
-;  lcd_data_in[27] ; clk        ; 4.733 ; 4.733 ; Rise       ; clk             ;
-;  lcd_data_in[28] ; clk        ; 5.421 ; 5.421 ; Rise       ; clk             ;
-;  lcd_data_in[29] ; clk        ; 5.421 ; 5.421 ; Rise       ; clk             ;
-;  lcd_data_in[30] ; clk        ; 5.269 ; 5.269 ; Rise       ; clk             ;
-;  lcd_data_in[31] ; clk        ; 5.118 ; 5.118 ; Rise       ; clk             ;
+; lcd_data_in[*]   ; clk        ; 5.924 ; 5.924 ; Rise       ; clk             ;
+;  lcd_data_in[0]  ; clk        ; 4.849 ; 4.849 ; Rise       ; clk             ;
+;  lcd_data_in[1]  ; clk        ; 5.035 ; 5.035 ; Rise       ; clk             ;
+;  lcd_data_in[2]  ; clk        ; 5.042 ; 5.042 ; Rise       ; clk             ;
+;  lcd_data_in[3]  ; clk        ; 5.453 ; 5.453 ; Rise       ; clk             ;
+;  lcd_data_in[4]  ; clk        ; 5.342 ; 5.342 ; Rise       ; clk             ;
+;  lcd_data_in[5]  ; clk        ; 5.489 ; 5.489 ; Rise       ; clk             ;
+;  lcd_data_in[6]  ; clk        ; 5.388 ; 5.388 ; Rise       ; clk             ;
+;  lcd_data_in[7]  ; clk        ; 5.441 ; 5.441 ; Rise       ; clk             ;
+;  lcd_data_in[8]  ; clk        ; 4.979 ; 4.979 ; Rise       ; clk             ;
+;  lcd_data_in[9]  ; clk        ; 4.927 ; 4.927 ; Rise       ; clk             ;
+;  lcd_data_in[10] ; clk        ; 5.265 ; 5.265 ; Rise       ; clk             ;
+;  lcd_data_in[11] ; clk        ; 5.512 ; 5.512 ; Rise       ; clk             ;
+;  lcd_data_in[12] ; clk        ; 5.249 ; 5.249 ; Rise       ; clk             ;
+;  lcd_data_in[13] ; clk        ; 5.598 ; 5.598 ; Rise       ; clk             ;
+;  lcd_data_in[14] ; clk        ; 5.145 ; 5.145 ; Rise       ; clk             ;
+;  lcd_data_in[15] ; clk        ; 5.526 ; 5.526 ; Rise       ; clk             ;
+;  lcd_data_in[16] ; clk        ; 5.924 ; 5.924 ; Rise       ; clk             ;
+;  lcd_data_in[17] ; clk        ; 5.449 ; 5.449 ; Rise       ; clk             ;
+;  lcd_data_in[18] ; clk        ; 5.471 ; 5.471 ; Rise       ; clk             ;
+;  lcd_data_in[19] ; clk        ; 5.466 ; 5.466 ; Rise       ; clk             ;
+;  lcd_data_in[20] ; clk        ; 5.530 ; 5.530 ; Rise       ; clk             ;
+;  lcd_data_in[21] ; clk        ; 5.600 ; 5.600 ; Rise       ; clk             ;
+;  lcd_data_in[22] ; clk        ; 5.589 ; 5.589 ; Rise       ; clk             ;
+;  lcd_data_in[23] ; clk        ; 5.598 ; 5.598 ; Rise       ; clk             ;
+;  lcd_data_in[24] ; clk        ; 4.832 ; 4.832 ; Rise       ; clk             ;
+;  lcd_data_in[25] ; clk        ; 4.818 ; 4.818 ; Rise       ; clk             ;
+;  lcd_data_in[26] ; clk        ; 4.720 ; 4.720 ; Rise       ; clk             ;
+;  lcd_data_in[27] ; clk        ; 4.978 ; 4.978 ; Rise       ; clk             ;
+;  lcd_data_in[28] ; clk        ; 5.383 ; 5.383 ; Rise       ; clk             ;
+;  lcd_data_in[29] ; clk        ; 5.070 ; 5.070 ; Rise       ; clk             ;
+;  lcd_data_in[30] ; clk        ; 5.362 ; 5.362 ; Rise       ; clk             ;
+;  lcd_data_in[31] ; clk        ; 5.375 ; 5.375 ; Rise       ; clk             ;
 +------------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1009,39 +1009,39 @@ No paths to report.
 +------------------+------------+--------+--------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------------+------------+--------+--------+------------+-----------------+
-; lcd_data_in[*]   ; clk        ; -2.177 ; -2.177 ; Rise       ; clk             ;
-;  lcd_data_in[0]  ; clk        ; -2.439 ; -2.439 ; Rise       ; clk             ;
-;  lcd_data_in[1]  ; clk        ; -2.426 ; -2.426 ; Rise       ; clk             ;
-;  lcd_data_in[2]  ; clk        ; -2.868 ; -2.868 ; Rise       ; clk             ;
-;  lcd_data_in[3]  ; clk        ; -2.782 ; -2.782 ; Rise       ; clk             ;
-;  lcd_data_in[4]  ; clk        ; -2.837 ; -2.837 ; Rise       ; clk             ;
-;  lcd_data_in[5]  ; clk        ; -2.800 ; -2.800 ; Rise       ; clk             ;
-;  lcd_data_in[6]  ; clk        ; -2.915 ; -2.915 ; Rise       ; clk             ;
-;  lcd_data_in[7]  ; clk        ; -2.734 ; -2.734 ; Rise       ; clk             ;
-;  lcd_data_in[8]  ; clk        ; -2.267 ; -2.267 ; Rise       ; clk             ;
-;  lcd_data_in[9]  ; clk        ; -2.478 ; -2.478 ; Rise       ; clk             ;
-;  lcd_data_in[10] ; clk        ; -2.752 ; -2.752 ; Rise       ; clk             ;
-;  lcd_data_in[11] ; clk        ; -2.605 ; -2.605 ; Rise       ; clk             ;
-;  lcd_data_in[12] ; clk        ; -2.632 ; -2.632 ; Rise       ; clk             ;
-;  lcd_data_in[13] ; clk        ; -2.631 ; -2.631 ; Rise       ; clk             ;
-;  lcd_data_in[14] ; clk        ; -2.758 ; -2.758 ; Rise       ; clk             ;
-;  lcd_data_in[15] ; clk        ; -2.715 ; -2.715 ; Rise       ; clk             ;
-;  lcd_data_in[16] ; clk        ; -2.592 ; -2.592 ; Rise       ; clk             ;
-;  lcd_data_in[17] ; clk        ; -2.177 ; -2.177 ; Rise       ; clk             ;
-;  lcd_data_in[18] ; clk        ; -2.577 ; -2.577 ; Rise       ; clk             ;
-;  lcd_data_in[19] ; clk        ; -2.791 ; -2.791 ; Rise       ; clk             ;
-;  lcd_data_in[20] ; clk        ; -2.585 ; -2.585 ; Rise       ; clk             ;
-;  lcd_data_in[21] ; clk        ; -2.519 ; -2.519 ; Rise       ; clk             ;
-;  lcd_data_in[22] ; clk        ; -3.125 ; -3.125 ; Rise       ; clk             ;
-;  lcd_data_in[23] ; clk        ; -2.770 ; -2.770 ; Rise       ; clk             ;
-;  lcd_data_in[24] ; clk        ; -2.391 ; -2.391 ; Rise       ; clk             ;
-;  lcd_data_in[25] ; clk        ; -2.218 ; -2.218 ; Rise       ; clk             ;
-;  lcd_data_in[26] ; clk        ; -2.518 ; -2.518 ; Rise       ; clk             ;
-;  lcd_data_in[27] ; clk        ; -2.471 ; -2.471 ; Rise       ; clk             ;
-;  lcd_data_in[28] ; clk        ; -2.497 ; -2.497 ; Rise       ; clk             ;
-;  lcd_data_in[29] ; clk        ; -2.585 ; -2.585 ; Rise       ; clk             ;
-;  lcd_data_in[30] ; clk        ; -2.746 ; -2.746 ; Rise       ; clk             ;
-;  lcd_data_in[31] ; clk        ; -2.323 ; -2.323 ; Rise       ; clk             ;
+; lcd_data_in[*]   ; clk        ; -1.599 ; -1.599 ; Rise       ; clk             ;
+;  lcd_data_in[0]  ; clk        ; -1.681 ; -1.681 ; Rise       ; clk             ;
+;  lcd_data_in[1]  ; clk        ; -1.895 ; -1.895 ; Rise       ; clk             ;
+;  lcd_data_in[2]  ; clk        ; -1.797 ; -1.797 ; Rise       ; clk             ;
+;  lcd_data_in[3]  ; clk        ; -1.919 ; -1.919 ; Rise       ; clk             ;
+;  lcd_data_in[4]  ; clk        ; -1.880 ; -1.880 ; Rise       ; clk             ;
+;  lcd_data_in[5]  ; clk        ; -1.763 ; -1.763 ; Rise       ; clk             ;
+;  lcd_data_in[6]  ; clk        ; -1.722 ; -1.722 ; Rise       ; clk             ;
+;  lcd_data_in[7]  ; clk        ; -1.808 ; -1.808 ; Rise       ; clk             ;
+;  lcd_data_in[8]  ; clk        ; -1.647 ; -1.647 ; Rise       ; clk             ;
+;  lcd_data_in[9]  ; clk        ; -1.673 ; -1.673 ; Rise       ; clk             ;
+;  lcd_data_in[10] ; clk        ; -1.945 ; -1.945 ; Rise       ; clk             ;
+;  lcd_data_in[11] ; clk        ; -2.063 ; -2.063 ; Rise       ; clk             ;
+;  lcd_data_in[12] ; clk        ; -2.027 ; -2.027 ; Rise       ; clk             ;
+;  lcd_data_in[13] ; clk        ; -1.883 ; -1.883 ; Rise       ; clk             ;
+;  lcd_data_in[14] ; clk        ; -2.001 ; -2.001 ; Rise       ; clk             ;
+;  lcd_data_in[15] ; clk        ; -2.012 ; -2.012 ; Rise       ; clk             ;
+;  lcd_data_in[16] ; clk        ; -2.028 ; -2.028 ; Rise       ; clk             ;
+;  lcd_data_in[17] ; clk        ; -1.828 ; -1.828 ; Rise       ; clk             ;
+;  lcd_data_in[18] ; clk        ; -1.920 ; -1.920 ; Rise       ; clk             ;
+;  lcd_data_in[19] ; clk        ; -1.911 ; -1.911 ; Rise       ; clk             ;
+;  lcd_data_in[20] ; clk        ; -1.735 ; -1.735 ; Rise       ; clk             ;
+;  lcd_data_in[21] ; clk        ; -1.770 ; -1.770 ; Rise       ; clk             ;
+;  lcd_data_in[22] ; clk        ; -1.887 ; -1.887 ; Rise       ; clk             ;
+;  lcd_data_in[23] ; clk        ; -1.888 ; -1.888 ; Rise       ; clk             ;
+;  lcd_data_in[24] ; clk        ; -1.599 ; -1.599 ; Rise       ; clk             ;
+;  lcd_data_in[25] ; clk        ; -1.682 ; -1.682 ; Rise       ; clk             ;
+;  lcd_data_in[26] ; clk        ; -1.696 ; -1.696 ; Rise       ; clk             ;
+;  lcd_data_in[27] ; clk        ; -1.816 ; -1.816 ; Rise       ; clk             ;
+;  lcd_data_in[28] ; clk        ; -2.036 ; -2.036 ; Rise       ; clk             ;
+;  lcd_data_in[29] ; clk        ; -1.710 ; -1.710 ; Rise       ; clk             ;
+;  lcd_data_in[30] ; clk        ; -1.932 ; -1.932 ; Rise       ; clk             ;
+;  lcd_data_in[31] ; clk        ; -1.900 ; -1.900 ; Rise       ; clk             ;
 +------------------+------------+--------+--------+------------+-----------------+
 
 
@@ -1050,15 +1050,15 @@ No paths to report.
 +--------------+------------+-------+-------+------------+-----------------+
 ; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +--------------+------------+-------+-------+------------+-----------------+
-; e            ; clk        ; 4.949 ; 4.949 ; Rise       ; clk             ;
-; lcd_data[*]  ; clk        ; 5.250 ; 5.250 ; Rise       ; clk             ;
-;  lcd_data[0] ; clk        ; 4.784 ; 4.784 ; Rise       ; clk             ;
-;  lcd_data[1] ; clk        ; 4.638 ; 4.638 ; Rise       ; clk             ;
-;  lcd_data[2] ; clk        ; 4.326 ; 4.326 ; Rise       ; clk             ;
-;  lcd_data[3] ; clk        ; 4.971 ; 4.971 ; Rise       ; clk             ;
-;  lcd_data[4] ; clk        ; 4.594 ; 4.594 ; Rise       ; clk             ;
-;  lcd_data[5] ; clk        ; 5.250 ; 5.250 ; Rise       ; clk             ;
-; rs           ; clk        ; 5.530 ; 5.530 ; Rise       ; clk             ;
+; e            ; clk        ; 4.761 ; 4.761 ; Rise       ; clk             ;
+; lcd_data[*]  ; clk        ; 4.770 ; 4.770 ; Rise       ; clk             ;
+;  lcd_data[0] ; clk        ; 4.463 ; 4.463 ; Rise       ; clk             ;
+;  lcd_data[1] ; clk        ; 4.286 ; 4.286 ; Rise       ; clk             ;
+;  lcd_data[2] ; clk        ; 4.573 ; 4.573 ; Rise       ; clk             ;
+;  lcd_data[3] ; clk        ; 4.759 ; 4.759 ; Rise       ; clk             ;
+;  lcd_data[4] ; clk        ; 4.477 ; 4.477 ; Rise       ; clk             ;
+;  lcd_data[5] ; clk        ; 4.770 ; 4.770 ; Rise       ; clk             ;
+; rs           ; clk        ; 4.890 ; 4.890 ; Rise       ; clk             ;
 +--------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1067,15 +1067,15 @@ No paths to report.
 +--------------+------------+-------+-------+------------+-----------------+
 ; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +--------------+------------+-------+-------+------------+-----------------+
-; e            ; clk        ; 4.949 ; 4.949 ; Rise       ; clk             ;
-; lcd_data[*]  ; clk        ; 4.326 ; 4.326 ; Rise       ; clk             ;
-;  lcd_data[0] ; clk        ; 4.784 ; 4.784 ; Rise       ; clk             ;
-;  lcd_data[1] ; clk        ; 4.638 ; 4.638 ; Rise       ; clk             ;
-;  lcd_data[2] ; clk        ; 4.326 ; 4.326 ; Rise       ; clk             ;
-;  lcd_data[3] ; clk        ; 4.971 ; 4.971 ; Rise       ; clk             ;
-;  lcd_data[4] ; clk        ; 4.594 ; 4.594 ; Rise       ; clk             ;
-;  lcd_data[5] ; clk        ; 5.250 ; 5.250 ; Rise       ; clk             ;
-; rs           ; clk        ; 5.530 ; 5.530 ; Rise       ; clk             ;
+; e            ; clk        ; 4.761 ; 4.761 ; Rise       ; clk             ;
+; lcd_data[*]  ; clk        ; 4.286 ; 4.286 ; Rise       ; clk             ;
+;  lcd_data[0] ; clk        ; 4.463 ; 4.463 ; Rise       ; clk             ;
+;  lcd_data[1] ; clk        ; 4.286 ; 4.286 ; Rise       ; clk             ;
+;  lcd_data[2] ; clk        ; 4.573 ; 4.573 ; Rise       ; clk             ;
+;  lcd_data[3] ; clk        ; 4.759 ; 4.759 ; Rise       ; clk             ;
+;  lcd_data[4] ; clk        ; 4.477 ; 4.477 ; Rise       ; clk             ;
+;  lcd_data[5] ; clk        ; 4.770 ; 4.770 ; Rise       ; clk             ;
+; rs           ; clk        ; 4.890 ; 4.890 ; Rise       ; clk             ;
 +--------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1084,8 +1084,8 @@ No paths to report.
 +------------------+-------+-------+----------+---------+---------------------+
 ; Clock            ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-------+-------+----------+---------+---------------------+
-; Worst-case Slack ; 9.491 ; 0.215 ; N/A      ; N/A     ; 9.000               ;
-;  clk             ; 9.491 ; 0.215 ; N/A      ; N/A     ; 9.000               ;
+; Worst-case Slack ; 9.847 ; 0.215 ; N/A      ; N/A     ; 9.000               ;
+;  clk             ; 9.847 ; 0.215 ; N/A      ; N/A     ; 9.000               ;
 ; Design-wide TNS  ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  clk             ; 0.000 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 +------------------+-------+-------+----------+---------+---------------------+
@@ -1096,39 +1096,39 @@ No paths to report.
 +------------------+------------+--------+--------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------------+------------+--------+--------+------------+-----------------+
-; lcd_data_in[*]   ; clk        ; 12.509 ; 12.509 ; Rise       ; clk             ;
-;  lcd_data_in[0]  ; clk        ; 7.370  ; 7.370  ; Rise       ; clk             ;
-;  lcd_data_in[1]  ; clk        ; 8.180  ; 8.180  ; Rise       ; clk             ;
-;  lcd_data_in[2]  ; clk        ; 10.242 ; 10.242 ; Rise       ; clk             ;
-;  lcd_data_in[3]  ; clk        ; 10.887 ; 10.887 ; Rise       ; clk             ;
-;  lcd_data_in[4]  ; clk        ; 12.509 ; 12.509 ; Rise       ; clk             ;
-;  lcd_data_in[5]  ; clk        ; 12.222 ; 12.222 ; Rise       ; clk             ;
-;  lcd_data_in[6]  ; clk        ; 11.781 ; 11.781 ; Rise       ; clk             ;
-;  lcd_data_in[7]  ; clk        ; 11.987 ; 11.987 ; Rise       ; clk             ;
-;  lcd_data_in[8]  ; clk        ; 6.881  ; 6.881  ; Rise       ; clk             ;
-;  lcd_data_in[9]  ; clk        ; 8.274  ; 8.274  ; Rise       ; clk             ;
-;  lcd_data_in[10] ; clk        ; 10.027 ; 10.027 ; Rise       ; clk             ;
-;  lcd_data_in[11] ; clk        ; 10.426 ; 10.426 ; Rise       ; clk             ;
-;  lcd_data_in[12] ; clk        ; 12.075 ; 12.075 ; Rise       ; clk             ;
-;  lcd_data_in[13] ; clk        ; 11.828 ; 11.828 ; Rise       ; clk             ;
-;  lcd_data_in[14] ; clk        ; 11.399 ; 11.399 ; Rise       ; clk             ;
-;  lcd_data_in[15] ; clk        ; 11.886 ; 11.886 ; Rise       ; clk             ;
-;  lcd_data_in[16] ; clk        ; 7.674  ; 7.674  ; Rise       ; clk             ;
-;  lcd_data_in[17] ; clk        ; 7.549  ; 7.549  ; Rise       ; clk             ;
-;  lcd_data_in[18] ; clk        ; 9.621  ; 9.621  ; Rise       ; clk             ;
-;  lcd_data_in[19] ; clk        ; 10.909 ; 10.909 ; Rise       ; clk             ;
-;  lcd_data_in[20] ; clk        ; 11.884 ; 11.884 ; Rise       ; clk             ;
-;  lcd_data_in[21] ; clk        ; 11.585 ; 11.585 ; Rise       ; clk             ;
-;  lcd_data_in[22] ; clk        ; 12.262 ; 12.262 ; Rise       ; clk             ;
-;  lcd_data_in[23] ; clk        ; 12.079 ; 12.079 ; Rise       ; clk             ;
-;  lcd_data_in[24] ; clk        ; 7.170  ; 7.170  ; Rise       ; clk             ;
-;  lcd_data_in[25] ; clk        ; 7.690  ; 7.690  ; Rise       ; clk             ;
-;  lcd_data_in[26] ; clk        ; 9.495  ; 9.495  ; Rise       ; clk             ;
-;  lcd_data_in[27] ; clk        ; 10.146 ; 10.146 ; Rise       ; clk             ;
-;  lcd_data_in[28] ; clk        ; 11.714 ; 11.714 ; Rise       ; clk             ;
-;  lcd_data_in[29] ; clk        ; 11.653 ; 11.653 ; Rise       ; clk             ;
-;  lcd_data_in[30] ; clk        ; 11.408 ; 11.408 ; Rise       ; clk             ;
-;  lcd_data_in[31] ; clk        ; 11.062 ; 11.062 ; Rise       ; clk             ;
+; lcd_data_in[*]   ; clk        ; 12.463 ; 12.463 ; Rise       ; clk             ;
+;  lcd_data_in[0]  ; clk        ; 10.091 ; 10.091 ; Rise       ; clk             ;
+;  lcd_data_in[1]  ; clk        ; 10.507 ; 10.507 ; Rise       ; clk             ;
+;  lcd_data_in[2]  ; clk        ; 10.501 ; 10.501 ; Rise       ; clk             ;
+;  lcd_data_in[3]  ; clk        ; 11.417 ; 11.417 ; Rise       ; clk             ;
+;  lcd_data_in[4]  ; clk        ; 11.143 ; 11.143 ; Rise       ; clk             ;
+;  lcd_data_in[5]  ; clk        ; 11.565 ; 11.565 ; Rise       ; clk             ;
+;  lcd_data_in[6]  ; clk        ; 11.271 ; 11.271 ; Rise       ; clk             ;
+;  lcd_data_in[7]  ; clk        ; 11.425 ; 11.425 ; Rise       ; clk             ;
+;  lcd_data_in[8]  ; clk        ; 10.419 ; 10.419 ; Rise       ; clk             ;
+;  lcd_data_in[9]  ; clk        ; 10.256 ; 10.256 ; Rise       ; clk             ;
+;  lcd_data_in[10] ; clk        ; 11.034 ; 11.034 ; Rise       ; clk             ;
+;  lcd_data_in[11] ; clk        ; 11.468 ; 11.468 ; Rise       ; clk             ;
+;  lcd_data_in[12] ; clk        ; 10.996 ; 10.996 ; Rise       ; clk             ;
+;  lcd_data_in[13] ; clk        ; 11.779 ; 11.779 ; Rise       ; clk             ;
+;  lcd_data_in[14] ; clk        ; 10.721 ; 10.721 ; Rise       ; clk             ;
+;  lcd_data_in[15] ; clk        ; 11.623 ; 11.623 ; Rise       ; clk             ;
+;  lcd_data_in[16] ; clk        ; 12.463 ; 12.463 ; Rise       ; clk             ;
+;  lcd_data_in[17] ; clk        ; 11.431 ; 11.431 ; Rise       ; clk             ;
+;  lcd_data_in[18] ; clk        ; 11.467 ; 11.467 ; Rise       ; clk             ;
+;  lcd_data_in[19] ; clk        ; 11.481 ; 11.481 ; Rise       ; clk             ;
+;  lcd_data_in[20] ; clk        ; 11.608 ; 11.608 ; Rise       ; clk             ;
+;  lcd_data_in[21] ; clk        ; 11.748 ; 11.748 ; Rise       ; clk             ;
+;  lcd_data_in[22] ; clk        ; 11.672 ; 11.672 ; Rise       ; clk             ;
+;  lcd_data_in[23] ; clk        ; 11.820 ; 11.820 ; Rise       ; clk             ;
+;  lcd_data_in[24] ; clk        ; 10.091 ; 10.091 ; Rise       ; clk             ;
+;  lcd_data_in[25] ; clk        ; 10.048 ; 10.048 ; Rise       ; clk             ;
+;  lcd_data_in[26] ; clk        ; 9.782  ; 9.782  ; Rise       ; clk             ;
+;  lcd_data_in[27] ; clk        ; 10.320 ; 10.320 ; Rise       ; clk             ;
+;  lcd_data_in[28] ; clk        ; 11.317 ; 11.317 ; Rise       ; clk             ;
+;  lcd_data_in[29] ; clk        ; 10.560 ; 10.560 ; Rise       ; clk             ;
+;  lcd_data_in[30] ; clk        ; 11.314 ; 11.314 ; Rise       ; clk             ;
+;  lcd_data_in[31] ; clk        ; 11.343 ; 11.343 ; Rise       ; clk             ;
 +------------------+------------+--------+--------+------------+-----------------+
 
 
@@ -1137,57 +1137,57 @@ No paths to report.
 +------------------+------------+--------+--------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------------+------------+--------+--------+------------+-----------------+
-; lcd_data_in[*]   ; clk        ; -2.177 ; -2.177 ; Rise       ; clk             ;
-;  lcd_data_in[0]  ; clk        ; -2.439 ; -2.439 ; Rise       ; clk             ;
-;  lcd_data_in[1]  ; clk        ; -2.426 ; -2.426 ; Rise       ; clk             ;
-;  lcd_data_in[2]  ; clk        ; -2.868 ; -2.868 ; Rise       ; clk             ;
-;  lcd_data_in[3]  ; clk        ; -2.782 ; -2.782 ; Rise       ; clk             ;
-;  lcd_data_in[4]  ; clk        ; -2.837 ; -2.837 ; Rise       ; clk             ;
-;  lcd_data_in[5]  ; clk        ; -2.800 ; -2.800 ; Rise       ; clk             ;
-;  lcd_data_in[6]  ; clk        ; -2.915 ; -2.915 ; Rise       ; clk             ;
-;  lcd_data_in[7]  ; clk        ; -2.734 ; -2.734 ; Rise       ; clk             ;
-;  lcd_data_in[8]  ; clk        ; -2.267 ; -2.267 ; Rise       ; clk             ;
-;  lcd_data_in[9]  ; clk        ; -2.478 ; -2.478 ; Rise       ; clk             ;
-;  lcd_data_in[10] ; clk        ; -2.752 ; -2.752 ; Rise       ; clk             ;
-;  lcd_data_in[11] ; clk        ; -2.605 ; -2.605 ; Rise       ; clk             ;
-;  lcd_data_in[12] ; clk        ; -2.632 ; -2.632 ; Rise       ; clk             ;
-;  lcd_data_in[13] ; clk        ; -2.631 ; -2.631 ; Rise       ; clk             ;
-;  lcd_data_in[14] ; clk        ; -2.758 ; -2.758 ; Rise       ; clk             ;
-;  lcd_data_in[15] ; clk        ; -2.715 ; -2.715 ; Rise       ; clk             ;
-;  lcd_data_in[16] ; clk        ; -2.592 ; -2.592 ; Rise       ; clk             ;
-;  lcd_data_in[17] ; clk        ; -2.177 ; -2.177 ; Rise       ; clk             ;
-;  lcd_data_in[18] ; clk        ; -2.577 ; -2.577 ; Rise       ; clk             ;
-;  lcd_data_in[19] ; clk        ; -2.791 ; -2.791 ; Rise       ; clk             ;
-;  lcd_data_in[20] ; clk        ; -2.585 ; -2.585 ; Rise       ; clk             ;
-;  lcd_data_in[21] ; clk        ; -2.519 ; -2.519 ; Rise       ; clk             ;
-;  lcd_data_in[22] ; clk        ; -3.125 ; -3.125 ; Rise       ; clk             ;
-;  lcd_data_in[23] ; clk        ; -2.770 ; -2.770 ; Rise       ; clk             ;
-;  lcd_data_in[24] ; clk        ; -2.391 ; -2.391 ; Rise       ; clk             ;
-;  lcd_data_in[25] ; clk        ; -2.218 ; -2.218 ; Rise       ; clk             ;
-;  lcd_data_in[26] ; clk        ; -2.518 ; -2.518 ; Rise       ; clk             ;
-;  lcd_data_in[27] ; clk        ; -2.471 ; -2.471 ; Rise       ; clk             ;
-;  lcd_data_in[28] ; clk        ; -2.497 ; -2.497 ; Rise       ; clk             ;
-;  lcd_data_in[29] ; clk        ; -2.585 ; -2.585 ; Rise       ; clk             ;
-;  lcd_data_in[30] ; clk        ; -2.746 ; -2.746 ; Rise       ; clk             ;
-;  lcd_data_in[31] ; clk        ; -2.323 ; -2.323 ; Rise       ; clk             ;
+; lcd_data_in[*]   ; clk        ; -1.599 ; -1.599 ; Rise       ; clk             ;
+;  lcd_data_in[0]  ; clk        ; -1.681 ; -1.681 ; Rise       ; clk             ;
+;  lcd_data_in[1]  ; clk        ; -1.895 ; -1.895 ; Rise       ; clk             ;
+;  lcd_data_in[2]  ; clk        ; -1.797 ; -1.797 ; Rise       ; clk             ;
+;  lcd_data_in[3]  ; clk        ; -1.919 ; -1.919 ; Rise       ; clk             ;
+;  lcd_data_in[4]  ; clk        ; -1.880 ; -1.880 ; Rise       ; clk             ;
+;  lcd_data_in[5]  ; clk        ; -1.763 ; -1.763 ; Rise       ; clk             ;
+;  lcd_data_in[6]  ; clk        ; -1.722 ; -1.722 ; Rise       ; clk             ;
+;  lcd_data_in[7]  ; clk        ; -1.808 ; -1.808 ; Rise       ; clk             ;
+;  lcd_data_in[8]  ; clk        ; -1.647 ; -1.647 ; Rise       ; clk             ;
+;  lcd_data_in[9]  ; clk        ; -1.673 ; -1.673 ; Rise       ; clk             ;
+;  lcd_data_in[10] ; clk        ; -1.945 ; -1.945 ; Rise       ; clk             ;
+;  lcd_data_in[11] ; clk        ; -2.063 ; -2.063 ; Rise       ; clk             ;
+;  lcd_data_in[12] ; clk        ; -2.027 ; -2.027 ; Rise       ; clk             ;
+;  lcd_data_in[13] ; clk        ; -1.883 ; -1.883 ; Rise       ; clk             ;
+;  lcd_data_in[14] ; clk        ; -2.001 ; -2.001 ; Rise       ; clk             ;
+;  lcd_data_in[15] ; clk        ; -2.012 ; -2.012 ; Rise       ; clk             ;
+;  lcd_data_in[16] ; clk        ; -2.028 ; -2.028 ; Rise       ; clk             ;
+;  lcd_data_in[17] ; clk        ; -1.828 ; -1.828 ; Rise       ; clk             ;
+;  lcd_data_in[18] ; clk        ; -1.920 ; -1.920 ; Rise       ; clk             ;
+;  lcd_data_in[19] ; clk        ; -1.911 ; -1.911 ; Rise       ; clk             ;
+;  lcd_data_in[20] ; clk        ; -1.735 ; -1.735 ; Rise       ; clk             ;
+;  lcd_data_in[21] ; clk        ; -1.770 ; -1.770 ; Rise       ; clk             ;
+;  lcd_data_in[22] ; clk        ; -1.887 ; -1.887 ; Rise       ; clk             ;
+;  lcd_data_in[23] ; clk        ; -1.888 ; -1.888 ; Rise       ; clk             ;
+;  lcd_data_in[24] ; clk        ; -1.599 ; -1.599 ; Rise       ; clk             ;
+;  lcd_data_in[25] ; clk        ; -1.682 ; -1.682 ; Rise       ; clk             ;
+;  lcd_data_in[26] ; clk        ; -1.696 ; -1.696 ; Rise       ; clk             ;
+;  lcd_data_in[27] ; clk        ; -1.816 ; -1.816 ; Rise       ; clk             ;
+;  lcd_data_in[28] ; clk        ; -2.036 ; -2.036 ; Rise       ; clk             ;
+;  lcd_data_in[29] ; clk        ; -1.710 ; -1.710 ; Rise       ; clk             ;
+;  lcd_data_in[30] ; clk        ; -1.932 ; -1.932 ; Rise       ; clk             ;
+;  lcd_data_in[31] ; clk        ; -1.900 ; -1.900 ; Rise       ; clk             ;
 +------------------+------------+--------+--------+------------+-----------------+
 
 
-+----------------------------------------------------------------------------+
-; Clock to Output Times                                                      ;
-+--------------+------------+--------+--------+------------+-----------------+
-; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+--------------+------------+--------+--------+------------+-----------------+
-; e            ; clk        ; 9.231  ; 9.231  ; Rise       ; clk             ;
-; lcd_data[*]  ; clk        ; 9.603  ; 9.603  ; Rise       ; clk             ;
-;  lcd_data[0] ; clk        ; 8.900  ; 8.900  ; Rise       ; clk             ;
-;  lcd_data[1] ; clk        ; 8.433  ; 8.433  ; Rise       ; clk             ;
-;  lcd_data[2] ; clk        ; 7.777  ; 7.777  ; Rise       ; clk             ;
-;  lcd_data[3] ; clk        ; 9.379  ; 9.379  ; Rise       ; clk             ;
-;  lcd_data[4] ; clk        ; 8.440  ; 8.440  ; Rise       ; clk             ;
-;  lcd_data[5] ; clk        ; 9.603  ; 9.603  ; Rise       ; clk             ;
-; rs           ; clk        ; 10.170 ; 10.170 ; Rise       ; clk             ;
-+--------------+------------+--------+--------+------------+-----------------+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; e            ; clk        ; 8.927 ; 8.927 ; Rise       ; clk             ;
+; lcd_data[*]  ; clk        ; 8.860 ; 8.860 ; Rise       ; clk             ;
+;  lcd_data[0] ; clk        ; 8.143 ; 8.143 ; Rise       ; clk             ;
+;  lcd_data[1] ; clk        ; 7.720 ; 7.720 ; Rise       ; clk             ;
+;  lcd_data[2] ; clk        ; 8.418 ; 8.418 ; Rise       ; clk             ;
+;  lcd_data[3] ; clk        ; 8.860 ; 8.860 ; Rise       ; clk             ;
+;  lcd_data[4] ; clk        ; 8.206 ; 8.206 ; Rise       ; clk             ;
+;  lcd_data[5] ; clk        ; 8.558 ; 8.558 ; Rise       ; clk             ;
+; rs           ; clk        ; 8.814 ; 8.814 ; Rise       ; clk             ;
++--------------+------------+-------+-------+------------+-----------------+
 
 
 +--------------------------------------------------------------------------+
@@ -1195,15 +1195,15 @@ No paths to report.
 +--------------+------------+-------+-------+------------+-----------------+
 ; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +--------------+------------+-------+-------+------------+-----------------+
-; e            ; clk        ; 4.949 ; 4.949 ; Rise       ; clk             ;
-; lcd_data[*]  ; clk        ; 4.326 ; 4.326 ; Rise       ; clk             ;
-;  lcd_data[0] ; clk        ; 4.784 ; 4.784 ; Rise       ; clk             ;
-;  lcd_data[1] ; clk        ; 4.638 ; 4.638 ; Rise       ; clk             ;
-;  lcd_data[2] ; clk        ; 4.326 ; 4.326 ; Rise       ; clk             ;
-;  lcd_data[3] ; clk        ; 4.971 ; 4.971 ; Rise       ; clk             ;
-;  lcd_data[4] ; clk        ; 4.594 ; 4.594 ; Rise       ; clk             ;
-;  lcd_data[5] ; clk        ; 5.250 ; 5.250 ; Rise       ; clk             ;
-; rs           ; clk        ; 5.530 ; 5.530 ; Rise       ; clk             ;
+; e            ; clk        ; 4.761 ; 4.761 ; Rise       ; clk             ;
+; lcd_data[*]  ; clk        ; 4.286 ; 4.286 ; Rise       ; clk             ;
+;  lcd_data[0] ; clk        ; 4.463 ; 4.463 ; Rise       ; clk             ;
+;  lcd_data[1] ; clk        ; 4.286 ; 4.286 ; Rise       ; clk             ;
+;  lcd_data[2] ; clk        ; 4.573 ; 4.573 ; Rise       ; clk             ;
+;  lcd_data[3] ; clk        ; 4.759 ; 4.759 ; Rise       ; clk             ;
+;  lcd_data[4] ; clk        ; 4.477 ; 4.477 ; Rise       ; clk             ;
+;  lcd_data[5] ; clk        ; 4.770 ; 4.770 ; Rise       ; clk             ;
+; rs           ; clk        ; 4.890 ; 4.890 ; Rise       ; clk             ;
 +--------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1212,7 +1212,7 @@ No paths to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 140550   ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 155802   ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1222,7 +1222,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 140550   ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 155802   ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1247,7 +1247,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 32    ; 32   ;
-; Unconstrained Input Port Paths  ; 376   ; 376  ;
+; Unconstrained Input Port Paths  ; 2656  ; 2656 ;
 ; Unconstrained Output Ports      ; 8     ; 8    ;
 ; Unconstrained Output Port Paths ; 8     ; 8    ;
 +---------------------------------+-------+------+
@@ -1259,7 +1259,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Jan 07 00:21:34 2023
+    Info: Processing started: Sat Jan 07 18:17:51 2023
 Info: Command: quartus_sta lcd_controller -c lcd_controller
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -1268,10 +1268,10 @@ Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'lcd_controller.sdc'
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
-Info (332146): Worst-case setup slack is 9.491
+Info (332146): Worst-case setup slack is 9.847
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     9.491         0.000 clk 
+    Info (332119):     9.847         0.000 clk 
 Info (332146): Worst-case hold slack is 0.391
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -1284,10 +1284,10 @@ Info (332146): Worst-case minimum pulse width slack is 9.000
     Info (332119):     9.000         0.000 clk 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
-Info (332146): Worst-case setup slack is 15.215
+Info (332146): Worst-case setup slack is 15.376
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    15.215         0.000 clk 
+    Info (332119):    15.376         0.000 clk 
 Info (332146): Worst-case hold slack is 0.215
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -1302,8 +1302,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4557 megabytes
-    Info: Processing ended: Sat Jan 07 00:21:35 2023
+    Info: Peak virtual memory: 4546 megabytes
+    Info: Processing ended: Sat Jan 07 18:17:52 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

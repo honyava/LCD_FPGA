@@ -1,0 +1,41 @@
+Active-HDL 13.0.376.8320 2023-01-07 11:54:20
+
+Elaboration top modules:
+Architecture                  tb(lcd_test_tb)
+
+
+------------------------------------------------------------------------------------------------------------
+Entity             | Architecture | Library        | Info | Compiler Version          | Compilation Options
+------------------------------------------------------------------------------------------------------------
+lcd_test_tb        | tb           | lcd_controller |      | 13.0.376.8320 (Windows64) | -O3 -2008
+lcd_test           | Behavioral   | lcd_controller |      | 13.0.376.8320 (Windows64) | -O3 -2008
+ControllerTest_TOP | behavior     | lcd_controller |      | 13.0.376.8320 (Windows64) | -O3 -2008
+lcd_controller     | controller   | lcd_controller |      | 13.0.376.8320 (Windows64) | -O3 -2008
+------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
+VHDL Package                      | Library        | Info | Compiler Version          | Compilation Options
+------------------------------------------------------------------------------------------------------------
+standard                          | std            |      |                           | <unavailable>
+TEXTIO                            | std            |      | 13.0.376.8320 (Windows64) |  -2019
+std_logic_1164                    | ieee           |      | 13.0.376.8320 (Windows64) |  -2008
+ENV                               | std            |      | 13.0.376.8320 (Windows64) |  -2019
+NUMERIC_STD                       | ieee           |      | 13.0.376.8320 (Windows64) |  -2008
+std_logic_arith                   | ieee           |      | 13.0.376.8320 (Windows64) | <unavailable>
+STD_LOGIC_UNSIGNED                | ieee           |      | 13.0.376.8320 (Windows64) | <unavailable>
+MATH_REAL                         | ieee           |      | 13.0.376.8320 (Windows64) | <unavailable>
+------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
+Library                           | Comment
+------------------------------------------------------------------------------------------------------------
+ieee                              | Standard IEEE packages library
+lcd_controller                    | None
+std                               | Standard VHDL library
+------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+lcd_test_tb lcd_test_tb tb
+
+
+The performance of simulation is reduced. Version Student Edition

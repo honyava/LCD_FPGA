@@ -1,0 +1,4 @@
+.\src\lcd_controller.vhd
+.\src\ControllerTest_TOP.vhd
+.\src\lcd_test.vhd
+.\src\lcd_test_tb.vhd
