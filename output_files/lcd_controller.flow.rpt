@@ -1,5 +1,5 @@
 Flow report for lcd_controller
-Sat Jan 07 21:59:46 2023
+Sun Jan 08 19:31:26 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sat Jan 07 21:59:46 2023           ;
+; Flow Status                        ; Successful - Sun Jan 08 19:31:26 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; lcd_controller                                  ;
 ; Top-level Entity Name              ; lcd_test                                        ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 374 / 33,216 ( 1 % )                            ;
-;     Total combinational functions  ; 356 / 33,216 ( 1 % )                            ;
-;     Dedicated logic registers      ; 148 / 33,216 ( < 1 % )                          ;
-; Total registers                    ; 148                                             ;
+; Total logic elements               ; 486 / 33,216 ( 1 % )                            ;
+;     Total combinational functions  ; 469 / 33,216 ( 1 % )                            ;
+;     Dedicated logic registers      ; 231 / 33,216 ( < 1 % )                          ;
+; Total registers                    ; 231                                             ;
 ; Total pins                         ; 46 / 475 ( 10 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/07/2023 21:59:34 ;
+; Start date & time ; 01/08/2023 19:31:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lcd_controller      ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+----------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value  ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+----------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 186427009942.167311797404236          ; --             ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 186427009942.167319547105396          ; --             ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --             ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; Active-HDL (VHDL)                     ; <None>         ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                  ; --             ; --          ; eda_simulation ;
@@ -99,12 +99,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4634 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 4875 MB             ; 00:00:04                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4568 MB             ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4627 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 4882 MB             ; 00:00:04                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4560 MB             ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4557 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4524 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:10                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4524 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

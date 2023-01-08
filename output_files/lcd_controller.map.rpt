@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lcd_controller
-Sat Jan 07 21:59:36 2023
+Sun Jan 08 19:31:14 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -46,15 +46,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jan 07 21:59:36 2023           ;
+; Analysis & Synthesis Status        ; Successful - Sun Jan 08 19:31:14 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; lcd_controller                                  ;
 ; Top-level Entity Name              ; lcd_test                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 389                                             ;
-;     Total combinational functions  ; 356                                             ;
-;     Dedicated logic registers      ; 148                                             ;
-; Total registers                    ; 148                                             ;
+; Total logic elements               ; 502                                             ;
+;     Total combinational functions  ; 469                                             ;
+;     Dedicated logic registers      ; 231                                             ;
+; Total registers                    ; 231                                             ;
 ; Total pins                         ; 46                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -176,28 +176,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 389   ;
+; Estimated Total logic elements              ; 502   ;
 ;                                             ;       ;
-; Total combinational functions               ; 356   ;
+; Total combinational functions               ; 469   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 227   ;
-;     -- 3 input functions                    ; 78    ;
-;     -- <=2 input functions                  ; 51    ;
+;     -- 4 input functions                    ; 252   ;
+;     -- 3 input functions                    ; 98    ;
+;     -- <=2 input functions                  ; 119   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 292   ;
-;     -- arithmetic mode                      ; 64    ;
+;     -- normal mode                          ; 315   ;
+;     -- arithmetic mode                      ; 154   ;
 ;                                             ;       ;
-; Total registers                             ; 148   ;
-;     -- Dedicated logic registers            ; 148   ;
+; Total registers                             ; 231   ;
+;     -- Dedicated logic registers            ; 231   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 46    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 148   ;
-; Total fan-out                               ; 1572  ;
-; Average fan-out                             ; 2.86  ;
+; Maximum fan-out                             ; 231   ;
+; Total fan-out                               ; 2156  ;
+; Average fan-out                             ; 2.89  ;
 +---------------------------------------------+-------+
 
 
@@ -206,9 +206,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
 ; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Library Name ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
-; |lcd_test                        ; 356 (0)           ; 148 (0)      ; 0           ; 0            ; 0       ; 0         ; 46   ; 0            ; |lcd_test                             ; work         ;
-;    |ControllerTest_TOP:LCD_user| ; 182 (182)         ; 103 (103)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_test|ControllerTest_TOP:LCD_user ; work         ;
-;    |lcd_controller:LCD_contr|    ; 174 (174)         ; 45 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_test|lcd_controller:LCD_contr    ; work         ;
+; |lcd_test                        ; 469 (0)           ; 231 (0)      ; 0           ; 0            ; 0       ; 0         ; 46   ; 0            ; |lcd_test                             ; work         ;
+;    |ControllerTest_TOP:LCD_user| ; 294 (294)         ; 186 (186)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_test|ControllerTest_TOP:LCD_user ; work         ;
+;    |lcd_controller:LCD_contr|    ; 175 (175)         ; 45 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_test|lcd_controller:LCD_contr    ; work         ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -226,37 +226,44 @@ Encoding Type:  One-Hot
 +------------------+------------+-------------+------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                            ;
-+------------------------------------------+----------------------------------------------------+
-; Register name                            ; Reason for Removal                                 ;
-+------------------------------------------+----------------------------------------------------+
-; ControllerTest_TOP:LCD_user|cnt[0..2]    ; Stuck at GND due to stuck port data_in             ;
-; ControllerTest_TOP:LCD_user|bindec[11]   ; Merged with ControllerTest_TOP:LCD_user|bindec[10] ;
-; lcd_controller:LCD_contr|lcd_data[7]     ; Merged with lcd_controller:LCD_contr|lcd_data[6]   ;
-; ControllerTest_TOP:LCD_user|lcd_bus[9]   ; Merged with ControllerTest_TOP:LCD_user|lcd_bus[5] ;
-; ControllerTest_TOP:LCD_user|lcd_bus[7,8] ; Merged with ControllerTest_TOP:LCD_user|lcd_bus[6] ;
-; ControllerTest_TOP:LCD_user|bindec[10]   ; Stuck at GND due to stuck port data_in             ;
-; ControllerTest_TOP:LCD_user|lcd_bus[5]   ; Stuck at VCC due to stuck port data_in             ;
-; ControllerTest_TOP:LCD_user|lcd_bus[6]   ; Stuck at GND due to stuck port data_in             ;
-; lcd_controller:LCD_contr|rw              ; Stuck at GND due to stuck port data_in             ;
-; lcd_controller:LCD_contr|lcd_data[6]     ; Stuck at GND due to stuck port data_in             ;
-; ControllerTest_TOP:LCD_user|to_lcd[4]    ; Stuck at GND due to stuck port data_in             ;
-; ControllerTest_TOP:LCD_user|cnt[5]       ; Stuck at GND due to stuck port data_in             ;
-; Total Number of Removed Registers = 15   ;                                                    ;
-+------------------------------------------+----------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                       ;
++-----------------------------------------------------------+--------------------------------------------------------------+
+; Register name                                             ; Reason for Removal                                           ;
++-----------------------------------------------------------+--------------------------------------------------------------+
+; ControllerTest_TOP:LCD_user|global_flag_finish[1..31]     ; Stuck at GND due to stuck port data_in                       ;
+; ControllerTest_TOP:LCD_user|cnt[0..2]                     ; Stuck at GND due to stuck port data_in                       ;
+; ControllerTest_TOP:LCD_user|global_flag_start[1..3,5..31] ; Merged with ControllerTest_TOP:LCD_user|global_flag_start[4] ;
+; ControllerTest_TOP:LCD_user|flag_point[2..31]             ; Merged with ControllerTest_TOP:LCD_user|flag_point[1]        ;
+; ControllerTest_TOP:LCD_user|send_flag[2..31]              ; Merged with ControllerTest_TOP:LCD_user|send_flag[1]         ;
+; ControllerTest_TOP:LCD_user|bindec[11]                    ; Merged with ControllerTest_TOP:LCD_user|bindec[10]           ;
+; lcd_controller:LCD_contr|lcd_data[7]                      ; Merged with lcd_controller:LCD_contr|lcd_data[6]             ;
+; ControllerTest_TOP:LCD_user|lcd_bus[9]                    ; Merged with ControllerTest_TOP:LCD_user|lcd_bus[5]           ;
+; ControllerTest_TOP:LCD_user|lcd_bus[7,8]                  ; Merged with ControllerTest_TOP:LCD_user|lcd_bus[6]           ;
+; ControllerTest_TOP:LCD_user|global_flag_start[4]          ; Stuck at GND due to stuck port data_in                       ;
+; ControllerTest_TOP:LCD_user|flag_point[1]                 ; Stuck at GND due to stuck port data_in                       ;
+; ControllerTest_TOP:LCD_user|bindec[10]                    ; Stuck at GND due to stuck port data_in                       ;
+; ControllerTest_TOP:LCD_user|lcd_bus[5]                    ; Stuck at VCC due to stuck port data_in                       ;
+; ControllerTest_TOP:LCD_user|lcd_bus[6]                    ; Stuck at GND due to stuck port data_in                       ;
+; lcd_controller:LCD_contr|rw                               ; Stuck at GND due to stuck port data_in                       ;
+; lcd_controller:LCD_contr|lcd_data[6]                      ; Stuck at GND due to stuck port data_in                       ;
+; ControllerTest_TOP:LCD_user|to_lcd[4]                     ; Stuck at GND due to stuck port data_in                       ;
+; ControllerTest_TOP:LCD_user|send_flag[1]                  ; Stuck at GND due to stuck port data_in                       ;
+; Total Number of Removed Registers = 138                   ;                                                              ;
++-----------------------------------------------------------+--------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                            ;
-+----------------------------------------+---------------------------+-------------------------------------------------------------------+
-; Register name                          ; Reason for Removal        ; Registers Removed due to This Register                            ;
-+----------------------------------------+---------------------------+-------------------------------------------------------------------+
-; ControllerTest_TOP:LCD_user|lcd_bus[6] ; Stuck at GND              ; lcd_controller:LCD_contr|rw, lcd_controller:LCD_contr|lcd_data[6] ;
-;                                        ; due to stuck port data_in ;                                                                   ;
-; ControllerTest_TOP:LCD_user|bindec[10] ; Stuck at GND              ; ControllerTest_TOP:LCD_user|to_lcd[4]                             ;
-;                                        ; due to stuck port data_in ;                                                                   ;
-+----------------------------------------+---------------------------+-------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                     ;
++---------------------------------------------------+---------------------------+---------------------------------------------------------------------------------+
+; Register name                                     ; Reason for Removal        ; Registers Removed due to This Register                                          ;
++---------------------------------------------------+---------------------------+---------------------------------------------------------------------------------+
+; ControllerTest_TOP:LCD_user|global_flag_finish[1] ; Stuck at GND              ; ControllerTest_TOP:LCD_user|global_flag_start[4],                               ;
+;                                                   ; due to stuck port data_in ; ControllerTest_TOP:LCD_user|lcd_bus[5], ControllerTest_TOP:LCD_user|lcd_bus[6], ;
+;                                                   ;                           ; lcd_controller:LCD_contr|rw, lcd_controller:LCD_contr|lcd_data[6]               ;
+; ControllerTest_TOP:LCD_user|flag_point[1]         ; Stuck at GND              ; ControllerTest_TOP:LCD_user|to_lcd[4]                                           ;
+;                                                   ; due to stuck port data_in ;                                                                                 ;
++---------------------------------------------------+---------------------------+---------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -264,12 +271,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 148   ;
-; Number of registers using Synchronous Clear  ; 5     ;
+; Total registers                              ; 231   ;
+; Number of registers using Synchronous Clear  ; 37    ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 21    ;
+; Number of registers using Clock Enable       ; 112   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -289,16 +296,17 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|j[0]         ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 3 LEs                ; 12 LEs                 ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|lcd_bus[6]   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|j[5]         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|send_flag[0] ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 3 LEs                ; 12 LEs                 ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|lcd_bus[3]   ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |lcd_test|lcd_controller:LCD_contr|rs              ;
-; 32:1               ; 3 bits    ; 63 LEs        ; 15 LEs               ; 48 LEs                 ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|lcd_bus[2]   ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|to_lcd[2]    ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|to_lcd[1]    ;
+; 32:1               ; 3 bits    ; 63 LEs        ; 15 LEs               ; 48 LEs                 ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|lcd_bus[4]   ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|to_lcd[3]    ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lcd_test|ControllerTest_TOP:LCD_user|to_lcd[0]    ;
 ; 13:1               ; 2 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |lcd_test|lcd_controller:LCD_contr|lcd_data[5]     ;
-; 14:1               ; 5 bits    ; 45 LEs        ; 35 LEs               ; 10 LEs                 ; Yes        ; |lcd_test|lcd_controller:LCD_contr|lcd_data[4]     ;
-; 14:1               ; 31 bits   ; 279 LEs       ; 31 LEs               ; 248 LEs                ; Yes        ; |lcd_test|lcd_controller:LCD_contr|clk_count[11]   ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |lcd_test|ControllerTest_TOP:LCD_user|Mux16        ;
+; 14:1               ; 5 bits    ; 45 LEs        ; 35 LEs               ; 10 LEs                 ; Yes        ; |lcd_test|lcd_controller:LCD_contr|lcd_data[0]     ;
+; 14:1               ; 31 bits   ; 279 LEs       ; 31 LEs               ; 248 LEs                ; Yes        ; |lcd_test|lcd_controller:LCD_contr|clk_count[30]   ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |lcd_test|ControllerTest_TOP:LCD_user|Mux13        ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |lcd_test|ControllerTest_TOP:LCD_user|div_freq_lcd ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lcd_test|ControllerTest_TOP:LCD_user|bindec       ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lcd_test|ControllerTest_TOP:LCD_user|bindec       ;
@@ -320,7 +328,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Jan 07 21:59:34 2023
+    Info: Processing started: Sun Jan 08 19:31:11 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lcd_controller -c lcd_controller
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file lcd_controller.vhd
@@ -343,14 +351,14 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "lcd_blon" is stuck at VCC
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 448 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 562 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 33 input pins
     Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 402 logic cells
+    Info (21061): Implemented 516 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4635 megabytes
-    Info: Processing ended: Sat Jan 07 21:59:36 2023
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4631 megabytes
+    Info: Processing ended: Sun Jan 08 19:31:14 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
