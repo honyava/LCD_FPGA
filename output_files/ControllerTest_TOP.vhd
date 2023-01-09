@@ -103,7 +103,7 @@ BEGIN
                 change := '1';
             end if;    
             if (send_flag = 0 and change = '1')  then       
-                temp_ip := lcd_data_in(7 + cnt downto 0 + cnt);
+                temp_ip := lcd_data_in(31 - cnt downto 24 - cnt);
                 bindec := bindec_func(temp_ip, 8);
                 send_flag := 1;
                 div_freq_lcd := 0;
@@ -127,7 +127,7 @@ BEGIN
                             to_lcd <= X"0" & bindec(3 downto 0);      --send 1 numbers of ip (1 for example)
                         else
                             if j < 2 then
-                                to_lcd <= X"0" & bindec(3 + 4*j downto 0 + 4*j);  --send 2 numbers of ip (10 for example)
+                                to_lcd <= X"0" & bindec(7 - 4*j downto 4 - 4*j);  --send 2 numbers of ip (10 for example)
                                 flag_point := 0;
                                 if j = 1 then 
                                     flag_point := 1;
@@ -135,7 +135,7 @@ BEGIN
                             end if;  
                         end if;
                     else 
-                        to_lcd <= X"0" & bindec(3 + 4*j downto 0 + 4*j); --send 3 numbers of ip (192 for example)
+                        to_lcd <= X"0" & bindec(11 - 4*j downto 8 - 4*j); --send 3 numbers of ip (192 for example)
                     end if; 
                 end if;
                 div_freq_lcd := 0;

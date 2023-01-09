@@ -50,7 +50,7 @@ architecture Behavioral of lcd_test is
     END COMPONENT;
   
 begin
-    
+        
     LCD_user: ControllerTest_TOP port map(
         
         clk => clk,
@@ -74,5 +74,5 @@ begin
         lcd_on => lcd_on,
         lcd_blon => lcd_blon
         );
-    
+        
 end Behavioral;
